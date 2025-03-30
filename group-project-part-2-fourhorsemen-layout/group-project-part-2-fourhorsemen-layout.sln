@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "group-project-part-2-fourhorsemen-layout", "group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout.csproj", "{2ED066B7-6D17-4EE0-8F70-64AB65D00555}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ED066B7-6D17-4EE0-8F70-64AB65D00555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED066B7-6D17-4EE0-8F70-64AB65D00555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED066B7-6D17-4EE0-8F70-64AB65D00555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED066B7-6D17-4EE0-8F70-64AB65D00555}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B02BF05-1C35-47B0-A7FA-8C911779176C}
+	EndGlobalSection
+EndGlobal
