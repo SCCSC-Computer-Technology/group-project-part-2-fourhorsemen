@@ -1,0 +1,10 @@
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\bin\Debug\group-project-part-2-fourhorsemen-layout.exe.config
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\bin\Debug\group-project-part-2-fourhorsemen-layout.exe
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\bin\Debug\group-project-part-2-fourhorsemen-layout.pdb
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group-project-part-2-fourhorsemen-layout.csproj.AssemblyReference.cache
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group_project_part_2_fourhorsemen_layout.Form1.resources
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group_project_part_2_fourhorsemen_layout.Properties.Resources.resources
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group-project-part-2-fourhorsemen-layout.csproj.GenerateResource.cache
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group-project-part-2-fourhorsemen-layout.csproj.CoreCompileInputs.cache
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group-project-part-2-fourhorsemen-layout.exe
+C:\Users\amfos\source\repos\group-project-part-2-fourhorsemen-layout\group-project-part-2-fourhorsemen-layout\obj\Debug\group-project-part-2-fourhorsemen-layout.pdb
