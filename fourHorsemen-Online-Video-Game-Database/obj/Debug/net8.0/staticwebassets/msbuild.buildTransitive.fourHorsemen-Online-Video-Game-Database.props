@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\fourHorsemen-Online-Video-Game-Database.props" />
+</Project>
