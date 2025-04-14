@@ -58,3 +58,7 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\nes_games.csv
+wwwroot\sega_genesis_games.csv
+wwwroot\sega_master_system_games.csv
+wwwroot\snes_games.csv

@@ -1,9 +1,13 @@
 using fourHorsemen_Online_Video_Game_Database.Data;
+using fourHorsemen_Online_Video_Game_Database.Services;
 using Microsoft.EntityFrameworkCore;
 
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+//registers the service so it can be injected into controllers
+builder.Services.AddHttpClient<RawgApiService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -31,5 +35,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "privacy",
+    pattern: "Privacy",
+    defaults: new { controller = "Home", action = "Privacy" });
 
 app.Run();
