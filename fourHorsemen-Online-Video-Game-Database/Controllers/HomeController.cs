@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using fourHorsemen_Online_Video_Game_Database.Models;
+using fourHorsemen_Online_Video_Game_Database.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers

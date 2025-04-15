@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using fourHorsemen_Online_Video_Game_Database.Models.ViewModels;
+using fourHorsemen_Online_Video_Game_Database.Services;
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers
 {
@@ -19,6 +20,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
         public IActionResult Login()
         {
+            ViewBag.FunFact = FunFactsService.GetRandomFact();
             return View();
         }
 
