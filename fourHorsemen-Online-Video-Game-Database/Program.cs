@@ -41,4 +41,14 @@ app.MapControllerRoute(
     pattern: "Privacy",
     defaults: new { controller = "Home", action = "Privacy" });
 
+app.MapControllerRoute(
+    name: "history",
+    pattern: "History",
+    defaults: new { controller = "Home", action = "History" });
+
+app.MapControllerRoute(
+    name: "facts",
+    pattern: "Facts",
+    defaults: new { controller = "Home", action = "Facts" });
+
 app.Run();

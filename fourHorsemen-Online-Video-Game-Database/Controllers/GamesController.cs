@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;                             //for mvc controller
 using Microsoft.EntityFrameworkCore;                        //for ef core functionality
 using fourHorsemen_Online_Video_Game_Database.Data;         //for accessing the GameDBContext
 using fourHorsemen_Online_Video_Game_Database.Models;       //for accessing the Game model
+using System.Diagnostics;
 
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers
@@ -118,10 +119,10 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             //format the system name for custom titles
             string formattedTitle = system.ToLower() switch
             {
-                "nes" => "Nintendo (NES) - Famicom",
-                "snes" => "Super Nintendo (SNES) - Super Famicom",
-                "sega_master_system" => "Sega Master System - Sega Mark III",
-                "sega_genesis" => "Sega Genesis - Mega Drive",
+                "nes" => "Nintendo (NES) / Famicom",
+                "snes" => "Super Nintendo (SNES) / Super Famicom",
+                "sega_master_system" => "Sega Master System / Sega Mark III",
+                "sega_genesis" => "Sega Genesis / Mega Drive",
                 //default case for any system that doesn't match the above
                 _ => system.Replace('_', ' ') //replace underscores with spaces
                     .ToLower() //convert the system name to lowercase
@@ -132,7 +133,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
 
             // Set the dynamic title
-            ViewBag.SystemTitle = $"{formattedTitle} Games";
+            ViewBag.SystemTitle = $"{formattedTitle} Game List";
 
             //return the list of games to the view
             return View(games);
@@ -175,5 +176,12 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
         //    return View();
         //}
+
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
     }
 }

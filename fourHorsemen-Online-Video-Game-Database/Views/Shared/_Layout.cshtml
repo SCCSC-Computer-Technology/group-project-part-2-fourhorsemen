@@ -12,36 +12,36 @@
 
     <style>
         .hdrTitle {
-            text-align: center;
-            font-family: Chiller;
-            color: brown;
-            font-size: 30px;
-            padding: 10px 0;
-            background-color: black;
-            font-weight: bold;
+        text-align: center;
+        font-family: Chiller;
+        color: brown;
+        font-size: 30px;
+        padding: 10px 0;
+        background-color: black;
+        font-weight: bold;
         }
 
         .navbar {
-            background-color: #555555;
-            color: #333;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 10px 20px;
+        background-color: #555555;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 20px;
         }
 
         .navbar-brand {
-            font-weight: bold;
-            color: aliceblue !important;
+        font-weight: bold;
+        color: aliceblue !important;
         }
 
         .navbar-nav .nav-link {
-            color: aliceblue !important;
-            margin-right: 15px;
+        color: aliceblue !important;
+        margin-right: 15px;
         }
 
-            .navbar-nav .nav-link:hover {
-                color: #007bff !important;
-                text-decoration: underline;
-            }
+        .navbar-nav .nav-link:hover {
+        color: #007bff !important;
+        text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -60,11 +60,11 @@
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link @(currentController == "Home" && currentAction == "Index" ? "active" : "")"
-                           href="/Home">Home</a>
+                        href="/Home">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle @(currentController == "Games" && currentAction == "SystemGamesList" ? "active" : "")"
-                           href="#" id="systemsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        href="#" id="systemsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Systems
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="systemsDropdown">
@@ -74,13 +74,42 @@
                             <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_genesis">Sega Genesis</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link @(currentController == "Home" && currentAction == "Privacy" ? "active" : "")"
-                           href="/Privacy">Privacy</a>
+                        <a class="nav-link @(currentController == "Home" && currentAction == "History" ? "active" : "")"
+                        href="/History">History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link @(currentController == "Home" && currentAction == "Facts" ? "active" : "")"
+                        href="/Facts">Secret Kingdom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Forums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Swap Meet</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle @(currentController == "Account" && (currentAction == "MyInfo" || currentAction == "FavoriteGames" || currentAction == "OwnedGames" || currentAction == "WishList" || currentAction == "DefeatedGames" || currentAction == "Login" || currentAction == "Register") ? "active" : "")"
+                        href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="systemsDropdown">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <li><a class="dropdown-item" href="/Account/Login">Login</a></li>
+                                <li><a class="dropdown-item" href="/Account/Register">Sign Up</a></li>
+                            }
+                            else
+                            {
+                                <li><a class="dropdown-item" href="/Account/MyInfo">My Info</a></li>
+                                <li><a class="dropdown-item" href="/Account/FavoriteGames">Favorite Games</a></li>
+                                <li><a class="dropdown-item" href="/Account/OwnedGames">Owned Games</a></li>
+                                <li><a class="dropdown-item" href="/Account/WishList">Wish List</a></li>
+                                <li><a class="dropdown-item" href="/Account/DefeatedGames">Defeated Games</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="/Account/Logout">Logout</a></li>
+                            }                           
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -96,7 +125,9 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2025 - fourHorsemen_Online_Video_Game_Database -
-            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a asp-area="" asp-controller="Home" asp-action="About">About Us</a> - 
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> - 
+            <a asp-area="" asp-controller="Home" asp-action="Admin">Admin</a>
         </div>
     </footer>
 
