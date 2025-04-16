@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\ktjda\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\ktjda\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\games\\systemgameslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\games\\systemgameslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +30,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-16T21:08:54.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Controllers\\GamesController.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAAwJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T20:24:58.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T20:24:58.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SystemGamesList.cshtml",
               "DocumentMoniker": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Games\\SystemGamesList.cshtml",
               "RelativeDocumentMoniker": "Views\\Games\\SystemGamesList.cshtml",
