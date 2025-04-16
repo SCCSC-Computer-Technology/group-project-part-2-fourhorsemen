@@ -67,10 +67,34 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1 class="text-center text-danger" style="font-family: 'Audiowide', cursive">@ViewData["Title"]</h1>
-
+        <form method="get" asp-controller="Games" asp-action="SystemGamesList">
+            <input type="hidden" name="system" value="@ViewBag.System" />
+            <div class="form-group">
+                <input type="text" name="searchString" value="@ViewBag.SearchString" class="form-control" placeholder="Search by title..." />
+            </div>
+            <button type="submit" class="btn btn-primary mt-2 mb-4">Search</button>
+        </form>
+        <div class="text-center mb-3">
+            <strong>Filter by first letter:</strong><br />
+            @foreach (char c in Enumerable.Range('A', 26).Select(i => (char)i))
+            {
+                <a asp-controller="Games"
+                   asp-action="SystemGamesList"
+                   asp-route-system="@ViewBag.System"
+                   asp-route-startsWith="@c"
+                   class="btn btn-sm @(ViewBag.StartsWith?.ToString() == c.ToString() ? "btn-primary" : "btn-outline-secondary") m-1">
+                    @c
+                </a>
+            }
+            <a asp-controller="Games"
+               asp-action="SystemGamesList"
+               asp-route-system="@ViewBag.System"
+               class="btn btn-sm @(string.IsNullOrEmpty(ViewBag.StartsWith) ? "btn-primary" : "btn-outline-secondary") m-1">
+                All
+            </a>
+        </div>
         <div class="game-list">
             @foreach (var game in Model)
             {

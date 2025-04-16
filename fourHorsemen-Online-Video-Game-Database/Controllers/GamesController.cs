@@ -96,7 +96,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         };
 
         //shows a list of games for the selected system
-        public IActionResult SystemGamesList(string system)
+        public IActionResult SystemGamesList(string system, string searchString, string startsWith)
         {
             //return 400 if no system was provided
             if (string.IsNullOrEmpty(system))
@@ -114,6 +114,22 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             if (games.Count == 0)
             {
                 return NotFound("No games found or CSV file missing.");
+            }
+
+            // Filter the list based on search string (case-insensitive)
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                games = games
+                    .Where(g => g.Title.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            // Filter by first letter
+            if (!string.IsNullOrEmpty(startsWith))
+            {
+                games = games
+                    .Where(g => g.Title.StartsWith(startsWith, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
             }
 
             //format the system name for custom titles
@@ -134,6 +150,9 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
             // Set the dynamic title
             ViewBag.SystemTitle = $"{formattedTitle} Game List";
+            ViewBag.System = system;               // keep track of which system we're on
+            ViewBag.SearchString = searchString;   // for maintaining state in view
+            ViewBag.StartsWith = startsWith;
 
             //return the list of games to the view
             return View(games);

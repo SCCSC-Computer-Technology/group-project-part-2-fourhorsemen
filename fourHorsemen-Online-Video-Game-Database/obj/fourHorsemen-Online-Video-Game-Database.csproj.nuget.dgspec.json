@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj": {}
+    "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj": {
+    "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
+        "projectUniqueName": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
         "projectName": "fourHorsemen-Online-Video-Game-Database",
-        "projectPath": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
-        "packagesPath": "C:\\Users\\joshp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\obj\\",
+        "projectPath": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
+        "packagesPath": "C:\\Users\\ktjda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ktjda\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\School Work\\Program files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\joshp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ktjda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

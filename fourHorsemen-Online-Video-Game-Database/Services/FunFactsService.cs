@@ -67,7 +67,7 @@
     "Smash Bros. Voice: Lack of voice acting was due to budget.",
     "Aerith’s Death: Happened partly due to memory limitations.",
     "GTA Alien Again: Alien found dead in desert.",
-    "Dreamcast Flop: Innovative but failed due to bad timing."
+    "Dreamcast Flop: Innovative but failed due to bad timing.",
 
 // 4. Hardware & Tech Trivia
     "PS2 was stronger than some military-grade computers.",
