@@ -6,6 +6,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public string Slug { get; set; }
         public string Developer { get; set; }
         public string Publisher { get; set; }
         public string System { get; set; }

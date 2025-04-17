@@ -66,6 +66,19 @@ namespace fourHorsemen_Online_Video_Game_Database.Services
             //log to the console
             Console.WriteLine($"Saved {allNames.Count} game names to: {filePath}");
         }
+
+        public async Task<JsonElement?> GetGameDetailsAsync(string slug)
+        {
+            string url = $"{ApiUrl}/games/{slug}?key={ApiKey}";
+            var response = await _httpClient.GetAsync(url);
+
+            if (!response.IsSuccessStatusCode)
+                return null;
+
+            var content = await response.Content.ReadAsStringAsync();
+            var json = JsonDocument.Parse(content);
+            return json.RootElement;
+        }
     }
 }
 

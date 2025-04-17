@@ -99,7 +99,9 @@
             @foreach (var game in Model)
             {
                 <div class="game-item">
-                    <a href="/games/details/@game.Id">@game.Title.TrimEnd(',')</a>
+                    <a asp-controller="Games" asp-action="GameDetails" asp-route-slug="@game.Title.ToLower().Replace(' ', '-').Replace(":", "").Replace(",", "").Replace(".", "")">
+                        @game.Title
+                    </a>
                 </div>
             }
         </div>

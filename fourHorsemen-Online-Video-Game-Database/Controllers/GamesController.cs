@@ -174,28 +174,32 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                                  .ToList();
         }
 
+        [HttpGet("/Games/GameDetails/{slug}")]
+        public async Task<IActionResult> GameDetails(string slug)
+        {
+            var gameData = await _apiService.GetGameDetailsAsync(slug);
 
-        // ================================
-        // ADDITIONAL GAME DETAILS ACTIONS
-        // ================================
+            if (gameData == null)
+                return NotFound();
 
-        //// Displays detailed game info for one game by title
-        //public async Task<IActionResult> Details(string title)
-        //{
-        //    if (string.IsNullOrEmpty(title))
-        //    {
-        //        return NotFound(); // Return 404 if no title was passed
-        //    }
+            var viewModel = new GameDetailsViewModel
+            {
+                Title = gameData.Value.GetProperty("name").GetString(),
+                Developer = gameData.Value.TryGetProperty("developers", out var devs) && devs.GetArrayLength() > 0
+                    ? devs[0].GetProperty("name").GetString()
+                    : "Unknown",
+                Publisher = gameData.Value.TryGetProperty("publishers", out var pubs) && pubs.GetArrayLength() > 0
+                    ? pubs[0].GetProperty("name").GetString()
+                    : "Unknown",
+                Platform = string.Join(", ", gameData.Value.GetProperty("platforms").EnumerateArray()
+                    .Select(p => p.GetProperty("platform").GetProperty("name").GetString())),
+                ReleaseDate = gameData.Value.GetProperty("released").GetString() ?? "N/A",
+                Players = "1+", // We could eventually customize this if we find a better source
+                Sales = "N/A"   // RAWG doesn't provide this, but we could scrape or estimate later
+            };
 
-        //    // Use the API to get game details based on the title
-        //    var gameDetailsJson = await _apiService.GetGameDetailsAsync(title);
-
-        //    // Pass the JSON data to the view using ViewBag for now
-        //    ViewBag.GameJson = gameDetailsJson;
-
-        //    return View();
-        //}
-
+            return View(viewModel);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
