@@ -96,14 +96,28 @@
             </a>
         </div>
         <div class="game-list">
+            @{
+                string CleanSlug(string title)
+                {
+                    // Remove special characters that might break URLs
+                    var invalidChars = new[] { ":", ",", ".", "'", "\"", "(", ")", "[", "]", "!", "?", "&", "/" };
+                    foreach (var c in invalidChars)
+                    {
+                        title = title.Replace(c, "");
+                    }
+                    return title.ToLower().Replace(" ", "-");
+                }
+            }
+
             @foreach (var game in Model)
             {
                 <div class="game-item">
-                    <a asp-controller="Games" asp-action="GameDetails" asp-route-slug="@game.Title.ToLower().Replace(' ', '-').Replace(":", "").Replace(",", "").Replace(".", "")">
+                    <a asp-controller="Games" asp-action="GameDetails" asp-route-slug="@CleanSlug(game.Title)">
                         @game.Title
                     </a>
                 </div>
             }
+
         </div>
     </div>
 </body>
