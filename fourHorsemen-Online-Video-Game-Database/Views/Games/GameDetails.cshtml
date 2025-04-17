@@ -47,6 +47,9 @@
 
 <div class="details-container">
     <h1>@Model.Title</h1>
+    <div class="text-center mb-4">
+        <img src="@Model.CoverImageUrl" alt="@Model.Title Cover" style="max-width: 100%; height: auto; border-radius: 10px;" />
+    </div>
         <ul>
             <li><strong>Developer:</strong> @Model.Developer</li>
             <li><strong>Publisher:</strong> @Model.Publisher</li>
@@ -55,6 +58,7 @@
             <li><strong>Players:</strong> @Model.Players</li>
             <li><strong>Sales:</strong> @Model.Sales</li>
         </ul>
+</div>
 <div class="mb-3">
     <a href="javascript:history.back()" class="btn btn-secondary">
         ← Back to Game List

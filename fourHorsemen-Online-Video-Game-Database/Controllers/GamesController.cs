@@ -194,8 +194,11 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 Platform = string.Join(", ", gameData.Value.GetProperty("platforms").EnumerateArray()
                     .Select(p => p.GetProperty("platform").GetProperty("name").GetString())),
                 ReleaseDate = gameData.Value.GetProperty("released").GetString() ?? "N/A",
-                Players = "1+", // We could eventually customize this if we find a better source
-                Sales = "N/A"   // RAWG doesn't provide this, but we could scrape or estimate later
+                Players = "1+",
+                Sales = "N/A",
+                CoverImageUrl = gameData.Value.TryGetProperty("background_image", out var img)
+                                ? img.GetString()
+                                : "/images/placeholder.png" // fallback image
             };
 
             return View(viewModel);

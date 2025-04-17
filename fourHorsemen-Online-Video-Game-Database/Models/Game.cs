@@ -1,6 +1,4 @@
-﻿
-
-namespace fourHorsemen_Online_Video_Game_Database.Models
+﻿namespace fourHorsemen_Online_Video_Game_Database.Models
 {
     public class Game
     {

@@ -9,5 +9,6 @@
         public string ReleaseDate { get; set; }
         public string Players { get; set; }
         public string Sales { get; set; }
+        public string CoverImageUrl { get; set; }
     }
 }
