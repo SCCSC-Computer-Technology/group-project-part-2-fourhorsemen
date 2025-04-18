@@ -10,5 +10,6 @@
         public string Players { get; set; }
         public string Sales { get; set; }
         public string CoverImageUrl { get; set; }
+        public string Description { get; set; }
     }
 }

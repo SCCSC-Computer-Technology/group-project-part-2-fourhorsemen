@@ -253,25 +253,28 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             {
                 Title = game.TryGetProperty("name", out var name) ? name.GetString() : "Unknown",
                 Developer = game.TryGetProperty("developers", out var devs) && devs.GetArrayLength() > 0
-                    ? devs[0].GetProperty("name").GetString()
-                    : "Unknown",
+        ? devs[0].GetProperty("name").GetString()
+        : "Unknown",
                 Publisher = game.TryGetProperty("publishers", out var pubs) && pubs.GetArrayLength() > 0
-                    ? pubs[0].GetProperty("name").GetString()
-                    : "Unknown",
+        ? pubs[0].GetProperty("name").GetString()
+        : "Unknown",
                 Platform = game.TryGetProperty("platforms", out var platforms) && platforms.ValueKind == JsonValueKind.Array
-                    ? string.Join(", ", platforms.EnumerateArray()
-                        .Select(p => p.TryGetProperty("platform", out var plat) && plat.TryGetProperty("name", out var platName)
-                            ? platName.GetString()
-                            : "Unknown"))
-                    : "Unknown",
+        ? string.Join(", ", platforms.EnumerateArray()
+            .Select(p => p.TryGetProperty("platform", out var plat) && plat.TryGetProperty("name", out var platName)
+                ? platName.GetString()
+                : "Unknown"))
+        : "Unknown",
                 ReleaseDate = game.TryGetProperty("released", out var released)
-                    ? released.GetString() ?? "N/A"
-                    : "N/A",
+        ? released.GetString() ?? "N/A"
+        : "N/A",
                 Players = "1+",
                 Sales = "N/A",
                 CoverImageUrl = game.TryGetProperty("background_image", out var img)
-                    ? img.GetString() ?? "/images/placeholder.png"
-                    : "/images/placeholder.png"
+        ? img.GetString() ?? "/images/placeholder.png"
+        : "/images/placeholder.png",
+                Description = game.TryGetProperty("description_raw", out var desc)
+        ? desc.GetString() ?? "No description available."
+        : "No description available."
             };
 
             return View(viewModel);
