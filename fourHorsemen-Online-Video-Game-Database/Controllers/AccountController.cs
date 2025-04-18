@@ -17,7 +17,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         {
             _signInManager = signInManager;
             _userManager = userManager;
-            _emailSender = _emailSender;
+            _emailSender = emailSender;
         }
 
         public IActionResult Login()

@@ -6,6 +6,13 @@ using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure EmailSettings from appsettings.json
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
 //registers the service so it can be injected into controllers
 builder.Services.AddHttpClient<RawgApiService>();
 
