@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;                        //for ef core functi
 using fourHorsemen_Online_Video_Game_Database.Data;         //for accessing the GameDBContext
 using fourHorsemen_Online_Video_Game_Database.Models;       //for accessing the Game model
 using System.Diagnostics;
+using System.Text.Json;
 
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers
@@ -246,23 +247,31 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             if (gameData == null)
                 return NotFound();
 
+            var game = gameData.Value;
+
             var viewModel = new GameDetailsViewModel
             {
-                Title = gameData.Value.GetProperty("name").GetString(),
-                Developer = gameData.Value.TryGetProperty("developers", out var devs) && devs.GetArrayLength() > 0
+                Title = game.TryGetProperty("name", out var name) ? name.GetString() : "Unknown",
+                Developer = game.TryGetProperty("developers", out var devs) && devs.GetArrayLength() > 0
                     ? devs[0].GetProperty("name").GetString()
                     : "Unknown",
-                Publisher = gameData.Value.TryGetProperty("publishers", out var pubs) && pubs.GetArrayLength() > 0
+                Publisher = game.TryGetProperty("publishers", out var pubs) && pubs.GetArrayLength() > 0
                     ? pubs[0].GetProperty("name").GetString()
                     : "Unknown",
-                Platform = string.Join(", ", gameData.Value.GetProperty("platforms").EnumerateArray()
-                    .Select(p => p.GetProperty("platform").GetProperty("name").GetString())),
-                ReleaseDate = gameData.Value.GetProperty("released").GetString() ?? "N/A",
+                Platform = game.TryGetProperty("platforms", out var platforms) && platforms.ValueKind == JsonValueKind.Array
+                    ? string.Join(", ", platforms.EnumerateArray()
+                        .Select(p => p.TryGetProperty("platform", out var plat) && plat.TryGetProperty("name", out var platName)
+                            ? platName.GetString()
+                            : "Unknown"))
+                    : "Unknown",
+                ReleaseDate = game.TryGetProperty("released", out var released)
+                    ? released.GetString() ?? "N/A"
+                    : "N/A",
                 Players = "1+",
                 Sales = "N/A",
-                CoverImageUrl = gameData.Value.TryGetProperty("background_image", out var img)
-                                ? img.GetString()
-                                : "/images/placeholder.png" // fallback image
+                CoverImageUrl = game.TryGetProperty("background_image", out var img)
+                    ? img.GetString() ?? "/images/placeholder.png"
+                    : "/images/placeholder.png"
             };
 
             return View(viewModel);

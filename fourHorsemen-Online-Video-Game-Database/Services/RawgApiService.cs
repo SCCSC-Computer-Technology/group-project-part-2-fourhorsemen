@@ -67,18 +67,49 @@ namespace fourHorsemen_Online_Video_Game_Database.Services
             Console.WriteLine($"Saved {allNames.Count} game names to: {filePath}");
         }
 
-        public async Task<JsonElement?> GetGameDetailsAsync(string slug)
+        public async Task<JsonElement?> GetGameDetailsAsync(string slugOrTitle)
         {
-            string url = $"{ApiUrl}/games/{slug}?key={ApiKey}";
-            var response = await _httpClient.GetAsync(url);
+            // First try slug directly
+            string slugUrl = $"{ApiUrl}/games/{slugOrTitle}?key={ApiKey}";
+            var slugResponse = await _httpClient.GetAsync(slugUrl);
 
-            if (!response.IsSuccessStatusCode)
+            if (slugResponse.IsSuccessStatusCode)
+            {
+                var content = await slugResponse.Content.ReadAsStringAsync();
+                var json = JsonDocument.Parse(content);
+                var root = json.RootElement;
+
+                // Handle redirect
+                if (root.TryGetProperty("redirect", out var redirect) && redirect.GetBoolean()
+                    && root.TryGetProperty("slug", out var newSlug))
+                {
+                    return await GetGameDetailsAsync(newSlug.GetString());
+                }
+
+                return root;
+            }
+
+            // If slug failed, try search
+            string searchUrl = $"{ApiUrl}/games?search={Uri.EscapeDataString(slugOrTitle)}&key={ApiKey}";
+            var searchResponse = await _httpClient.GetAsync(searchUrl);
+
+            if (!searchResponse.IsSuccessStatusCode)
                 return null;
 
-            var content = await response.Content.ReadAsStringAsync();
-            var json = JsonDocument.Parse(content);
-            return json.RootElement;
+            var searchContent = await searchResponse.Content.ReadAsStringAsync();
+            var searchJson = JsonDocument.Parse(searchContent);
+            var results = searchJson.RootElement.GetProperty("results");
+
+            if (results.GetArrayLength() == 0)
+                return null;
+
+            var firstResult = results[0];
+            var correctedSlug = firstResult.GetProperty("slug").GetString();
+
+            // Now fetch full details using corrected slug
+            return await GetGameDetailsAsync(correctedSlug);
         }
+
     }
 }
 
