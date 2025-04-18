@@ -11,11 +11,13 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IEmailSender _emailSender;
 
-        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IEmailSender emailSender)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _emailSender = _emailSender;
         }
 
         public IActionResult Login()
@@ -99,5 +101,58 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+        {
+            if (userId == null || token == null) return View("Error");
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) return View("Error");
+
+            var result = await _userManager.ConfirmEmailAsync(user, token);
+            return result.Succeeded ? View("ConfirmEmail") : View("Error");
+        }
+
+        //forget password get
+        [HttpGet]
+        public IActionResult ForgotPassword() => View();
+
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                return View("ForgotPasswordConfirmation");
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var callbackUrl = Url.Action("ResetPassword", "Account", new { token, email = user.Email }, Request.Scheme);
+
+            await _emailSender.SendEmailAsync(user.Email, "Reset Password",
+                $"Click <a href='{callbackUrl}'>here</a> to reset your password.");
+
+            return View("ForgotPasswordConfirmation");
+        }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string token, string email)
+        {
+            if (token == null || email == null) return View("Error");
+            return View(new ResetPasswordViewModel { Token = token, Email = email });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null) return RedirectToAction("ResetPasswordConfirmation");
+
+            var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+            return result.Succeeded ? View("ResetPasswordConfirmation") : View("Error");
+        }
+
     }
 }
