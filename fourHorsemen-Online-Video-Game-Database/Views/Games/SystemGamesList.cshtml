@@ -107,13 +107,19 @@
                     }
                     return title.ToLower().Replace(" ", "-");
                 }
+
+                //remove comma at end of game titles for displaying the list
+                string CleanDisplayTitle(string title)
+                {
+                    return title.TrimEnd(',', ' ');
+                }
             }
 
             @foreach (var game in Model)
             {
                 <div class="game-item">
                     <a asp-controller="Games" asp-action="GameDetails" asp-route-slug="@CleanSlug(game.Title)">
-                        @game.Title
+                        @CleanDisplayTitle(game.Title)
                     </a>
                 </div>
             }

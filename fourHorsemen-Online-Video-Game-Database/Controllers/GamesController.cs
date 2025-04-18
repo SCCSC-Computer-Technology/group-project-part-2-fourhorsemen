@@ -27,59 +27,123 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
         //creates a local csv of NES games using the rawg api
         //[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        public async Task<IActionResult> GenerateNesCsv()
+        public async Task<IActionResult> GenerateCsv(int platformId, string systemName)
         {
-            //define file path to save NES games CSV
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "nes_games.csv");
+            //build file path dynamically based on system name
+            string fileName = $"{systemName}_games.csv";
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", fileName);
 
-            //save NES game names to CSV file (using platform ID for NES)
-            await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 49);
+            //count how many games are already in the csv if file exists
+            int initialCount = 0;
+            if (System.IO.File.Exists(filePath))
+            {
+                initialCount = CountGamesInCsv(filePath);
+            }
 
-            //return success message
-            return Content($"NES game names saved successfully to: {filePath}");
+            //save new game names from the aoi to csv file
+            await _apiService.SaveGameNamesToCsvAsync(filePath, platformId);
+
+            //sort csv file alphabetically
+            SortCsvAlphabetically(filePath);
+
+            //count how many games are in csv file after update
+            int finalCount = CountGamesInCsv(filePath);
+
+            //calculate how many new games were added
+            int gamesAdded = finalCount - initialCount;
+
+            //prepare message to show how many games were added
+            string message = gamesAdded > 0
+                             ? $"{gamesAdded} more games added to the CSV for {systemName}."
+                             : "No new games added.";
+
+            //return success message with final number of games
+            return Content($"{systemName} game names saved and sorted successfully to: {filePath}. {message}");
         }
 
-        //creates a local csv of SNES games using the rawg api
-        //[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        public async Task<IActionResult> GenerateSnesCsv()
+        //helper method to count number of games in csv file
+        private int CountGamesInCsv(string filePath)
         {
-            //define file path to save SNES games CSV
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "snes_games.csv");
+            if (!System.IO.File.Exists(filePath)) return 0; //if the file doesn't exist, return 0
 
-            //save SNES game names to CSV file (using platform ID for SNES)
-            await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 79);
+            //read all lines in the csv file and ignore empty lines
+            var lines = System.IO.File.ReadAllLines(filePath)
+                                      .Where(line => !string.IsNullOrWhiteSpace(line)) //ignore empty lines
+                                      .ToArray();
 
-            //return success message
-            return Content($"SNES game names saved successfully to: {filePath}");
+            //return number of lines (number of games)
+            return lines.Length;
         }
 
-        //creates a local csv of Sega Master System games using the rawg api
-        //[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        public async Task<IActionResult> GenerateSegaMasterSystemCsv()
+
+
+        //helper method to sort csv file alphabetically by game titles
+        private void SortCsvAlphabetically(string filePath)
         {
-            //define file path to save Sega Master System games CSV
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sega_master_system_games.csv");
+            if (!System.IO.File.Exists(filePath)) return;
 
-            //save Sega Master System game names to CSV file (using platform ID for Sega Master System)
-            await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 74);
+            var lines = System.IO.File.ReadAllLines(filePath)
+                                      .Where(line => !string.IsNullOrWhiteSpace(line)) //ignore empty lines
+                                      .OrderBy(line => line.Trim()) //sort alphabetically
+                                      .ToArray();
 
-            //return success message
-            return Content($"Sega Master System game names saved successfully to: {filePath}");
+            System.IO.File.WriteAllLines(filePath, lines); //write sorted lines back to the file
         }
 
-        //creates a local csv of Sega Genesis games using the rawg api
-        //[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        public async Task<IActionResult> GenerateSegaGenesisCsv()
-        {
-            //define file path to save Sega Genesis games CSV
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sega_genesis_games.csv");
 
-            //save Sega Genesis game names to CSV file (using platform ID for Sega Genesis)
-            await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 167);
+        //public async Task<IActionResult> GenerateNesCsv()
+        //{
+        //    //define file path to save NES games CSV
+        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "nes_games.csv");
 
-            //return success message
-            return Content($"Sega Genesis game names saved successfully to: {filePath}");
-        }
+        //    //save NES game names to CSV file (using platform ID for NES)
+        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 49);
+
+        //    //return success message
+        //    return Content($"NES game names saved successfully to: {filePath}");
+        //}
+
+        ////creates a local csv of SNES games using the rawg api
+        ////[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
+        //public async Task<IActionResult> GenerateSnesCsv()
+        //{
+        //    //define file path to save SNES games CSV
+        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "snes_games.csv");
+
+        //    //save SNES game names to CSV file (using platform ID for SNES)
+        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 79);
+
+        //    //return success message
+        //    return Content($"SNES game names saved successfully to: {filePath}");
+        //}
+
+        ////creates a local csv of Sega Master System games using the rawg api
+        ////[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
+        //public async Task<IActionResult> GenerateSegaMasterSystemCsv()
+        //{
+        //    //define file path to save Sega Master System games CSV
+        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sega_master_system_games.csv");
+
+        //    //save Sega Master System game names to CSV file (using platform ID for Sega Master System)
+        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 74);
+
+        //    //return success message
+        //    return Content($"Sega Master System game names saved successfully to: {filePath}");
+        //}
+
+        ////creates a local csv of Sega Genesis games using the rawg api
+        ////[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
+        //public async Task<IActionResult> GenerateSegaGenesisCsv()
+        //{
+        //    //define file path to save Sega Genesis games CSV
+        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sega_genesis_games.csv");
+
+        //    //save Sega Genesis game names to CSV file (using platform ID for Sega Genesis)
+        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 167);
+
+        //    //return success message
+        //    return Content($"Sega Genesis game names saved successfully to: {filePath}");
+        //}
 
 
         // ================================

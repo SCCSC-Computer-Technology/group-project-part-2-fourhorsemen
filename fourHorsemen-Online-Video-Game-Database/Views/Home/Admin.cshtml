@@ -1,6 +1,57 @@
 ﻿@{
     ViewData["Title"] = "Admin";
 }
+
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to do admin stuff.</p>
+<p><u>Update Game CSVs:</u></p>
+
+<ul>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="27" asp-route-systemName="sony_ps1">Generate PS1 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="15" asp-route-systemName="sony_ps2">Generate PS2 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="16" asp-route-systemName="sony_ps3">Generate PS3 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="18" asp-route-systemName="sony_ps4">Generate PS4 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="187" asp-route-systemName="sony_ps5">Generate PS5 CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="17" asp-route-systemName="sony_psp">Generate PSP CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="19" asp-route-systemName="sony_vita">Generate Vita CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="80" asp-route-systemName="microsoft_xbox">Generate XBox CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="14" asp-route-systemName="microsoft_xbox_360">Generate XBox 360 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="1" asp-route-systemName="microsoft_xbox_one">Generate XBox One CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="80" asp-route-systemName="microsoft_xbox_series_sx">Generate XBox Series S/X CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="49" asp-route-systemName="nes">Generate NES CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="79" asp-route-systemName="snes">Generate SNES CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="83" asp-route-systemName="nintendo_64">Generate Nintendo 64 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="105" asp-route-systemName="nintendo_gamecube">Generate Nintendo GameCube CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="11" asp-route-systemName="nintendo_wii">Generate Nintendo Wii CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="10" asp-route-systemName="nintendo_wii_u">Generate Nintendo Wii U CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="7" asp-route-systemName="nintendo_switch">Generate Nintendo Switch CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="26" asp-route-systemName="nintendo_gameboy">Generate Nintendo GameBoy CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="43" asp-route-systemName="nintendo_gameboy_color">Generate Nintendo GameBoy Color CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="24" asp-route-systemName="nintendo_gameboy_advance">Generate Nintendo GameBoy Advance CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="9" asp-route-systemName="nintendo_ds">Generate Nintendo DS CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="8" asp-route-systemName="nintendo_3ds">Generate Nintendo 3DS CSV</a></li>
+        <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="74" asp-route-systemName="sega_master_system">Generate Sega Master System CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="167" asp-route-systemName="sega_genesis">Generate Sega Genesis CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="119" asp-route-systemName="sega_cd">Generate Sega CD CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="117" asp-route-systemName="sega_32x">Generate Sega 32x CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="107" asp-route-systemName="sega_saturn">Generate Sega Saturn CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="106" asp-route-systemName="sega_dreamcast">Generate Sega Dreamcast CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="77" asp-route-systemName="sega_gamegear">Generate Sega GameGear CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="23" asp-route-systemName="atari_2600">Generate Atari 2600 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="31" asp-route-systemName="atari_5200">Generate Atari 5200 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="28" asp-route-systemName="atari_7800">Generate Atari 7800 CSV</a></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="112" asp-route-systemName="atari_jaguar">Generate Atari Jaguar CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="46" asp-route-systemName="atari_lynx">Generate Atari Lynx CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="12" asp-route-systemName="snk_neogeo">Generate SNK Neo Geo CSV</a></li>
+    <li></li>
+    <li><a asp-controller="Games" asp-action="GenerateCsv" asp-route-platformId="111" asp-route-systemName="panasonic_3do">Generate Panasonic 3DO CSV</a></li>
+</ul>
