@@ -92,61 +92,6 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         }
 
 
-        //public async Task<IActionResult> GenerateNesCsv()
-        //{
-        //    //define file path to save NES games CSV
-        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "nes_games.csv");
-
-        //    //save NES game names to CSV file (using platform ID for NES)
-        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 49);
-
-        //    //return success message
-        //    return Content($"NES game names saved successfully to: {filePath}");
-        //}
-
-        ////creates a local csv of SNES games using the rawg api
-        ////[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        //public async Task<IActionResult> GenerateSnesCsv()
-        //{
-        //    //define file path to save SNES games CSV
-        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "snes_games.csv");
-
-        //    //save SNES game names to CSV file (using platform ID for SNES)
-        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 79);
-
-        //    //return success message
-        //    return Content($"SNES game names saved successfully to: {filePath}");
-        //}
-
-        ////creates a local csv of Sega Master System games using the rawg api
-        ////[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        //public async Task<IActionResult> GenerateSegaMasterSystemCsv()
-        //{
-        //    //define file path to save Sega Master System games CSV
-        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sega_master_system_games.csv");
-
-        //    //save Sega Master System game names to CSV file (using platform ID for Sega Master System)
-        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 74);
-
-        //    //return success message
-        //    return Content($"Sega Master System game names saved successfully to: {filePath}");
-        //}
-
-        ////creates a local csv of Sega Genesis games using the rawg api
-        ////[Authorize(Roles = "Admin")] --> NEED TO MAKE ADMIN ROLES
-        //public async Task<IActionResult> GenerateSegaGenesisCsv()
-        //{
-        //    //define file path to save Sega Genesis games CSV
-        //    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sega_genesis_games.csv");
-
-        //    //save Sega Genesis game names to CSV file (using platform ID for Sega Genesis)
-        //    await _apiService.SaveGameNamesToCsvAsync(filePath, platformId: 167);
-
-        //    //return success message
-        //    return Content($"Sega Genesis game names saved successfully to: {filePath}");
-        //}
-
-
         // ================================
         // GAME LIST VIEWS
         // ================================
@@ -154,10 +99,43 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         //dictionary to match each game system to its local csv file
         private static readonly Dictionary<string, string> _csvFiles = new()
         {
-            ["nes"] = "nes_games.csv",
+            ["sony_ps5"] = "sony_ps5_games.csv",
+            ["sony_ps4"] = "sony_ps4_games.csv",
+            ["sony_ps3"] = "sony_ps3_games.csv",
+            ["sony_ps2"] = "sony_ps2_games.csv",
+            ["sony_ps1"] = "sony_ps1_games.csv",
+            ["sony_vita"] = "sony_vita_games.csv",
+            ["sony_psp"] = "sony_psp_games.csv",
+            ["ms_xbox_sx"] = "microsoft_xbox_series_sx_games.csv",
+            ["ms_xbox_one"] = "microsoft_xbox_one_games.csv",
+            ["ms_xbox_360"] = "microsoft_xbox_360_games.csv",
+            ["ms_xbox"] = "microsoft_xbox_games.csv",
+            ["nintendo_switch"] = "nintendo_switch_games.csv",
+            ["nintendo_wii_u"] = "nintendo_wii_u_games.csv",
+            ["nintendo_wii"] = "nintendo_wii_games.csv",
+            ["nintendo_gamecube"] = "nintendo_gamecube_games.csv",
+            ["nintendo_64"] = "nintendo_64_games.csv",
             ["snes"] = "snes_games.csv",
+            ["nes"] = "nes_games.csv",
+            ["nintendo_3ds"] = "nintendo_3ds_games.csv",
+            ["nintendo_ds"] = "nintendo_ds_games.csv",
+            ["nintendo_gba"] = "nintendo_gameboy_advance_games.csv",
+            ["nintendo_gbc"] = "nintendo_gameboy_color_games.csv",
+            ["nintendo_gb"] = "nintendo_gameboy_games.csv",
+            ["sega_dreamcast"] = "sega_dreamcast_games.csv",
+            ["sega_saturn"] = "sega_saturn_games.csv",
+            ["sega_32x"] = "sega_32x_games.csv",
+            ["sega_cd"] = "sega_cd_games.csv",
+            ["sega_genesis"] = "sega_genesis_games.csv",
             ["sega_master_system"] = "sega_master_system_games.csv",
-            ["sega_genesis"] = "sega_genesis_games.csv"
+            ["sega_gamegear"] = "sega_gamegear_games.csv",
+            ["atari_jaguar"] = "atari_jaguar_games.csv",
+            ["atari_7800"] = "atari_7800_games.csv",
+            ["atari_5200"] = "atari_5200_games.csv",
+            ["atari_2600"] = "atari_2600_games.csv",
+            ["atari_lynx"] = "atari_lynx_games.csv",
+            ["panasonic_3do"] = "panasonic_3do_games.csv",
+            ["snk_neogeo"] = "snk_neogeo_games.csv"
         };
 
         //shows a list of games for the selected system
@@ -200,10 +178,31 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             //format the system name for custom titles
             string formattedTitle = system.ToLower() switch
             {
-                "nes" => "Nintendo (NES) / Famicom",
+                "sony_ps5" => "Sony PlayStation 5",
+                "sony_ps4" => "Sony PlayStation 4",
+                "sony_ps3" => "Sony PlayStation 3",
+                "sony_ps2" => "Sony PlayStation 2",
+                "sony_ps1" => "Sony PlayStation",
+                "sony_psp" => "Sony Playstation Portable (PSP)",
+                "ms_xbox_sx" => "Microsoft XBox Series S/X",
+                "ms_xbox_one" => "Microsoft XBox One",
+                "ms_xbox_360" => "Microsoft XBox 360",
+                "ms_xbox" => "Microsoft XBox",
+                "nintendo_gamecube" => "Nintendo GameCube",
                 "snes" => "Super Nintendo (SNES) / Super Famicom",
-                "sega_master_system" => "Sega Master System / Sega Mark III",
+                "nes" => "Nintendo (NES) / Famicom",
+                "nintendo_3ds" => "Nintendo 3DS",
+                "nintendo_ds" => "Nintendo DS",
+                "nintendo_gba" => "Nintendo GameBoy Advance",
+                "nintendo_gbc" => "Nintendo GameBoy Color",
+                "nintendo_gb" => "Nintendo GameBoy",
+                "sega_32x" => "Sega 32X",
+                "sega_cd" => "Sega CD",
                 "sega_genesis" => "Sega Genesis / Mega Drive",
+                "sega_master_system" => "Sega Master System / Sega Mark III",
+                "sega_gamegear" => "Sega GameGear",
+                "panasonic_3do" => "Panasonic 3D0",
+                "snk_neogeo" => "SNK Neo Geo",
                 //default case for any system that doesn't match the above
                 _ => system.Replace('_', ' ') //replace underscores with spaces
                     .ToLower() //convert the system name to lowercase
