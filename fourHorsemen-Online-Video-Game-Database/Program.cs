@@ -2,6 +2,7 @@ using fourHorsemen_Online_Video_Game_Database.Data;
 using fourHorsemen_Online_Video_Game_Database.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using System.Configuration;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,6 +32,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 .AddEntityFrameworkStores<GameDBContext>();
 
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+
+// Register the DbContext with the connection string
+builder.Services.AddDbContext<GameDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 
 var app = builder.Build();
