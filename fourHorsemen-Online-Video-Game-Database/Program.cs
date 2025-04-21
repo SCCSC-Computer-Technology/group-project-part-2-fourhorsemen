@@ -16,6 +16,8 @@ builder.Services.AddRazorPages();
 //registers the service so it can be injected into controllers
 builder.Services.AddHttpClient<RawgApiService>();
 
+builder.Services.AddSingleton<FunFactsService>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

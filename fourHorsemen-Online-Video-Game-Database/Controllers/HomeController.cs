@@ -31,7 +31,8 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
         public IActionResult Facts()
         {
-            return View();
+            var facts = FunFactsService.GetAllFacts(); 
+            return View(facts);
         }
 
         public IActionResult Admin()

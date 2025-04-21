@@ -3,4 +3,9 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to list cool and obscure video games facts.</p>
+<ul>
+    @foreach (var facts in Model)
+    {
+        <li>@facts</li>
+    }
+</ul>

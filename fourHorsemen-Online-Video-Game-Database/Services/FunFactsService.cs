@@ -4,7 +4,7 @@
     {
         private static readonly List<string> _facts = new()
         {
-             // Origins & Odd Histories
+             "Origins & Odd Histories\n",
     "Super Mario Bros. 2: Was originally Doki Doki Panic in Japan.",
     "Final Fantasy’s Name: Named 'Final' because it was supposed to be Square’s last game.",
     "Pokémon Mascot Switch: Clefairy was almost the mascot before Pikachu took over.",
@@ -30,9 +30,9 @@
     "PS2 Export Ban: PS2 was so powerful, it was restricted for military export.",
     "Crash Nickname: Developers called Crash 'Sonic's Ass Game'.",
     "Smash Bros. Almost Canceled: Low budget nearly killed the project.",
-    "Wii Remotes in Surgery: Used in medical training via Trauma Center.",
+    "Wii Remotes in Surgery: Used in medical training via Trauma Center.\n\n",
 
-    // Secrets, Easter Eggs & Hidden Content
+       "Secrets, Easter Eggs & Hidden Content\n",
     "Arkham Asylum: Had a hidden sequel teaser room.",
     "GTA V Alien: Frozen alien found early in the game.",
     "Halo 3: Dev’s birthday message hidden inside.",
@@ -50,9 +50,9 @@
     "Monster Dating: You can romance monsters in Stardew (mods).",
     "God in Halo: Appears briefly in the loading screen.",
     "Dreamcast Online: Had internet access before it was common.",
-    "Mario’s Voice: Same actor also voices Wario.",
+    "Mario’s Voice: Same actor also voices Wario.\n\n",
 
-    // Famous Fails & Weird Risks
+        "Famous Fails & Weird Risks\n",
     "E.T. Landfill: Millions of cartridges were buried in the desert.",
     "Nintendo & Sony: Their failed CD collaboration led to PlayStation.",
     "Mass Effect 3: Fan backlash led to a rewritten ending.",
@@ -67,9 +67,9 @@
     "Smash Bros. Voice: Lack of voice acting was due to budget.",
     "Aerith’s Death: Happened partly due to memory limitations.",
     "GTA Alien Again: Alien found dead in desert.",
-    "Dreamcast Flop: Innovative but failed due to bad timing.",
+    "Dreamcast Flop: Innovative but failed due to bad timing.\n\n",
 
-// 4. Hardware & Tech Trivia
+     "Hardware & Tech Trivia\n",
     "PS2 was stronger than some military-grade computers.",
     "Game Boy survived a bombing and still worked.",
     "Dreamcast included built-in online support.",
@@ -79,9 +79,9 @@
     "Doom even runs on toasters.",
     "GameCube startup had Easter egg chimes.",
     "SNES CD add-on eventually evolved into the PlayStation.",
-    "Old arcade cabinets were often repurposed.",
+    "Old arcade cabinets were often repurposed.\n\n",
 
-    // 5. Speedruns, Glitches & Alternate Playstyles
+          "Speedruns, Glitches & Alternate Playstyles\n",
     "Ocarina of Time was beaten in under 17 minutes.",
     "Half-Life was completed without using weapons.",
     "In MGS3, the aging boss can be defeated by waiting.",
@@ -91,9 +91,9 @@
     "Civilization II was won without going to war.",
     "A Pokémon game was beaten with no battles.",
     "Someone walked for hours into Minecraft’s Far Lands.",
-    "Dark Souls was beaten using a Rock Band guitar.",
+    "Dark Souls was beaten using a Rock Band guitar.\n\n",
 
-    // 6. Characters & Creators
+        "Characters & Creators\n",
     "Mario’s full name is Mario Mario.",
     "Sonic’s shoes were inspired by Michael Jackson and Santa Claus.",
     "Bowser’s design was inspired by an ox from Japanese folklore.",
@@ -107,6 +107,11 @@
         };
 
         private static readonly Random _random = new();
+
+        public static List<string> GetAllFacts()
+        {
+            return _facts;
+        }
 
         public static string GetRandomFact()
         {
