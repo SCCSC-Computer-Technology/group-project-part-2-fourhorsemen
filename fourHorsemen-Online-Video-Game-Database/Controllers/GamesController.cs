@@ -279,6 +279,35 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             return View(viewModel);
         }
 
+        [HttpPost]
+        public IActionResult AddToFavorites(string title)
+        {
+            // TODO: Add logic to associate game with user's favorites
+            return RedirectToAction("GameDetails", new { slug = title });
+        }
+
+        [HttpPost]
+        public IActionResult AddToOwned(string title)
+        {
+            // TODO: Add logic to mark game as owned
+            return RedirectToAction("GameDetails", new { slug = title });
+        }
+
+        [HttpPost]
+        public IActionResult AddToWishlist(string title)
+        {
+            // TODO: Add logic to add game to wishlist
+            return RedirectToAction("GameDetails", new { slug = title });
+        }
+
+        [HttpPost]
+        public IActionResult AddToDefeated(string title)
+        {
+            // TODO: Add logic to mark game as defeated
+            return RedirectToAction("GameDetails", new { slug = title });
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

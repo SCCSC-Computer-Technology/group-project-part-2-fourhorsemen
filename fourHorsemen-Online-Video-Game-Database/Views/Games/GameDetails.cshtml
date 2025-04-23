@@ -59,6 +59,21 @@
             <li><strong>Players:</strong> @Model.Players</li>
             <li><strong>Sales:</strong> @Model.Sales</li>
         </ul>
+
+    <div class="category-buttons" style="margin-top: 20px; text-align: center;">
+        <form asp-action="AddToFavorites" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-danger">❤️ Add to Favorites</button>
+        </form>
+        <form asp-action="AddToOwned" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-success">🎮 Add to Owned</button>
+        </form>
+        <form asp-action="AddToWishlist" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-warning">📌 Add to Wishlist</button>
+        </form>
+        <form asp-action="AddToDefeated" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-primary">✔️ Mark as Defeated</button>
+        </form>
+    </div>
 </div>
 <div class="mb-3">
     <a href="javascript:history.back()" class="btn btn-secondary">
