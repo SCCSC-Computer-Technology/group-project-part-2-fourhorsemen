@@ -1,11 +1,43 @@
-﻿@{
+﻿@using fourHorsemen_Online_Video_Game_Database.Services
+
+@model List<FactCategory>
+
+@{
     ViewData["Title"] = "Secret Kingdom - Did You Know?";
 }
 <h1>@ViewData["Title"]</h1>
 
-<ul>
-    @foreach (var facts in Model)
-    {
-        <li>@facts</li>
+@foreach (var category in Model)
+{
+    <h2><span class="section-emoji">@category.Emoji</span> @category.Title</h2>
+    <ul>
+        @foreach (var fact in category.Facts)
+        {
+            <li>@fact</li>
+        }
+    </ul>
+}
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+        color: #111;
+        
     }
-</ul>
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    li::before {
+        content: "🎮 ";
+        margin-right: 0.3em;
+    }
+    li {
+        margin-bottom: 0.5em;
+    }
+    .section-emoji {
+        margin-right: 0.3em;
+    }
+</style>
