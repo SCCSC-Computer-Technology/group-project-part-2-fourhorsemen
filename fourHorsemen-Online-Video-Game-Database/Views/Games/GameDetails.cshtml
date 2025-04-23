@@ -61,7 +61,8 @@
         </ul>
 
     <div class="category-buttons" style="margin-top: 20px; text-align: center;">
-        <form asp-action="AddToFavorites" asp-route-title="@Model.Title" method="post" style="display:inline;">
+        <form asp-action="AddToFavorites" method="post" style="display:inline;">
+            <input type="hidden" name="title" value="@Model.Title" />
             <button type="submit" class="btn btn-danger">❤️ Add to Favorites</button>
         </form>
         <form asp-action="AddToOwned" asp-route-title="@Model.Title" method="post" style="display:inline;">

@@ -3,6 +3,7 @@ using fourHorsemen_Online_Video_Game_Database.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using System.Configuration;
+using fourHorsemen_Online_Video_Game_Database.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,13 @@ builder.Services.AddRazorPages();
 builder.Services.AddHttpClient<RawgApiService>();
 
 builder.Services.AddSingleton<FunFactsService>();
+
+builder.Services.AddDbContext<GameDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    //.AddEntityFrameworkStores<GameDBContext>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

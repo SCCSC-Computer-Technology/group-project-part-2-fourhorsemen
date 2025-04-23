@@ -18,5 +18,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Data
         }
 
         public DbSet<Game> Games { get; set; }
+
+        public DbSet<UserGame> UserGames { get; set; }
     }
 }

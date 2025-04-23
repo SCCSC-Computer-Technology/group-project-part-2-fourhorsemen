@@ -5,20 +5,27 @@ using fourHorsemen_Online_Video_Game_Database.Data;         //for accessing the 
 using fourHorsemen_Online_Video_Game_Database.Models;       //for accessing the Game model
 using System.Diagnostics;
 using System.Text.Json;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers
 {
+
+    
     //controller to display the game data from rawg and the local csv files
     public class GamesController : Controller
     {
         //service to fetch game data from rawg api
         private readonly RawgApiService _apiService;
+        private readonly GameDBContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
         //cosnstructor that injects the rawg api service
-        public GamesController(RawgApiService apiService)
+        public GamesController(RawgApiService apiService, GameDBContext context, UserManager<IdentityUser> userManager)
         {
             _apiService = apiService;
+            _context = context;
+            _userManager = userManager;
         }
 
 
@@ -280,9 +287,38 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddToFavorites(string title)
+        [Route("Games/Favorites")]
+        public async Task<IActionResult> AddToFavorites(string title)
         {
-            // TODO: Add logic to associate game with user's favorites
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Challenge(); // Not logged in
+            }
+
+            var game = await _context.Games.FirstOrDefaultAsync(g => g.Title == title);
+            if (game == null)
+            {
+                return NotFound(); // Game not found
+            }
+
+            // Optional: Prevent duplicates
+            var alreadyFavorited = await _context.UserGames
+                .AnyAsync(ug => ug.UserId == user.Id && ug.Game.Id == game.Id && ug.Category == GameCategory.Favorite);
+
+            if (!alreadyFavorited)
+            {
+                var userGame = new UserGame
+                {
+                    UserId = user.Id,
+                    Game = game,
+                    Category = GameCategory.Favorite
+                };
+
+                _context.UserGames.Add(userGame);
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction("GameDetails", new { slug = title });
         }
 

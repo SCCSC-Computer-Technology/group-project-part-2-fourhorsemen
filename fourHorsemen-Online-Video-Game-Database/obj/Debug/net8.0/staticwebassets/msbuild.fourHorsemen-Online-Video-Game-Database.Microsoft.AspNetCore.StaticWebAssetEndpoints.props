@@ -88,13 +88,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fourHorsemen-Online-Video-Game-Database.ausw8r4wnv.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ausw8r4wnv"},{"Name":"integrity","Value":"sha256-Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/fourHorsemen-Online-Video-Game-Database.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 00:31:51 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Apr 2025 20:20:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/fourHorsemen-Online-Video-Game-Database.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fourHorsemen-Online-Video-Game-Database.ausw8r4wnv.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 00:31:51 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Apr 2025 20:20:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

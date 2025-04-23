@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using fourHorsemen_Online_Video_Game_Database.Models.ViewModels;
 using fourHorsemen_Online_Video_Game_Database.Services;
+using fourHorsemen_Online_Video_Game_Database.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers
 {
@@ -12,12 +14,14 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly GameDBContext _context;
 
-        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IEmailSender emailSender)
+        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IEmailSender emailSender, GameDBContext context)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _emailSender = emailSender;
+            _context = context;
         }
 
         public IActionResult Login()
@@ -153,6 +157,51 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
             return result.Succeeded ? View("ResetPasswordConfirmation") : View("Error");
         }
+
+        public async Task<IActionResult> Favorites()
+        {
+            var userId = _userManager.GetUserId(User);
+            var favorites = await _context.UserGames
+                .Where(ug => ug.UserId == userId && ug.Category == GameCategory.Favorite)
+                .Include(ug => ug.Game)
+                .ToListAsync();
+
+            return View("UserGames", favorites);
+        }
+
+        public async Task<IActionResult> Owned()
+        {
+            var userId = _userManager.GetUserId(User);
+            var owned = await _context.UserGames
+                .Where(ug => ug.UserId == userId && ug.Category == GameCategory.Owned)
+                .Include(ug => ug.Game)
+                .ToListAsync();
+
+            return View("UserGames", owned);
+        }
+
+        public async Task<IActionResult> Wishlist()
+        {
+            var userId = _userManager.GetUserId(User);
+            var wishlist = await _context.UserGames
+                .Where(ug => ug.UserId == userId && ug.Category == GameCategory.Wishlist)
+                .Include(ug => ug.Game)
+                .ToListAsync();
+
+            return View("UserGames", wishlist);
+        }
+
+        public async Task<IActionResult> Defeated()
+        {
+            var userId = _userManager.GetUserId(User);
+            var defeated = await _context.UserGames
+                .Where(ug => ug.UserId == userId && ug.Category == GameCategory.Defeated)
+                .Include(ug => ug.Game)
+                .ToListAsync();
+
+            return View("UserGames", defeated);
+        }
+
 
     }
 }
