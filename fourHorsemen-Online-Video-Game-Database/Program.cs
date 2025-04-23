@@ -20,11 +20,13 @@ builder.Services.AddHttpClient<RawgApiService>();
 
 builder.Services.AddSingleton<FunFactsService>();
 
+AppDomain.CurrentDomain.SetData("DataDirectory", Path.Combine(Directory.GetCurrentDirectory(), "Data"));
+
+
 builder.Services.AddDbContext<GameDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    //.AddEntityFrameworkStores<GameDBContext>();
+
 
 
 // Add services to the container.
