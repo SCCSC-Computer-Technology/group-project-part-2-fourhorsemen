@@ -56,7 +56,7 @@
             The fourHorsemen's Video Game Database
         </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+            <div class="container-fluid d-flex justify-content-center">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link @(currentController == "Home" && currentAction == "Index" ? "active" : "")"
@@ -172,7 +172,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container d-flex justify-content-center">
             &copy; 2025 - fourHorsemen_Online_Video_Game_Database -
             <a asp-area="" asp-controller="Home" asp-action="About">About Us</a> - 
             <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a> -

@@ -7964,23 +7964,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joshp\\.nuget\\packages\\": {},
-    "E:\\School Work\\Program files\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\dmsch\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
+      "projectUniqueName": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
       "projectName": "fourHorsemen-Online-Video-Game-Database",
-      "projectPath": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
-      "packagesPath": "C:\\Users\\joshp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\obj\\",
+      "projectPath": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\fourHorsemen-Online-Video-Game-Database.csproj",
+      "packagesPath": "C:\\Users\\dmsch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\School Work\\Program files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\joshp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dmsch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7989,7 +7989,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8060,7 +8059,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
