@@ -1,4 +1,7 @@
-﻿@{
+﻿@using CodeHollow.FeedReader
+@model List<FeedItemWithImage>
+
+@{
     Layout = "_Layout";
     ViewData["Title"] = "Home - fourHorsemen_Online_Video_Game_Database";
 }
@@ -6,3 +9,40 @@
 <div class="container">
     <h1 class="text-center">Welcome to the fourHorsemen's Video Game Database</h1>
 </div>
+
+
+
+
+<div class="container">
+    <br />
+    <h2 class="text-center">Latest Game News</h2>
+    <br />
+    <br />
+    @foreach (var news in Model)
+    {
+        <div class="news-item">
+            <h4><a href="@news.Link" target="_blank">@news.Title</a></h4>
+            @if (!string.IsNullOrEmpty(news.ImageUrl))
+            {
+                <img src="@news.ImageUrl" alt="News Image" style="max-width: 100%; height: auto;" />
+            }
+            <p>@Html.Raw(news.Description)</p>
+            <hr />
+        </div>
+
+}
+</div>
+
+<style>
+
+    .news-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .news-item img {
+        max-width: 80%;  /* Adjust width for better fitting images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+</style>

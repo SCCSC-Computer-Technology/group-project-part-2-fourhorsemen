@@ -9,14 +9,20 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly GameNewsService _newsService;
+
+        public HomeController(ILogger<HomeController> logger, GameNewsService newsService)
         {
             _logger = logger;
+            _newsService = newsService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+           
+
+            var news = await _newsService.GetNewsAsync();
+            return View(news); // pass to Index.cshtml
         }
 
         public IActionResult Privacy()
@@ -50,6 +56,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             return View();
         }
 
+      
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

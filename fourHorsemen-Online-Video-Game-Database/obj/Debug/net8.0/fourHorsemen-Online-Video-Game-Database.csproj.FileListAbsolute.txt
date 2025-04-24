@@ -958,3 +958,6 @@ C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-O
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\ref\fourHorsemen-Online-Video-Game-Database.dll
 C:\Users\dmsch\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\Data\GameDB_Shared.mdf
 C:\Users\dmsch\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\Data\GameDB_Shared_log.ldf
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\Data\GameDB_Shared.mdf
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\Data\GameDB_Shared_log.ldf
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\CodeHollow.FeedReader.dll

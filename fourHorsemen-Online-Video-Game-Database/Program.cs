@@ -20,6 +20,9 @@ builder.Services.AddHttpClient<RawgApiService>();
 
 builder.Services.AddSingleton<FunFactsService>();
 
+builder.Services.AddSingleton<GameNewsService>();
+
+
 AppDomain.CurrentDomain.SetData("DataDirectory", Path.Combine(Directory.GetCurrentDirectory(), "Data"));
 
 
