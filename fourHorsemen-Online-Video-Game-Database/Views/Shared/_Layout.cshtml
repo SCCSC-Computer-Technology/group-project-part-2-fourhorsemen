@@ -12,20 +12,29 @@
 
     <style>
         .hdrTitle {
-        text-align: center;
-        font-family: Chiller;
-        color: brown;
-        font-size: 30px;
-        padding: 10px 0;
-        background-color: black;
-        font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-family: Chiller;
+            color: brown;
+            font-size: 30px;
+            padding: 10px 0;
+            background-color: black;
+            font-weight: bold;
+            z-index: 1050; /* Ensure it appears above the navbar */
         }
 
+
         .navbar {
-        background-color: #555555;
-        color: #333;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 10px 20px;
+            position: fixed;
+            top: 50px; /* Height of hdrTitle + some padding */
+            width: 100%;
+            background-color: #222;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 20px;
+            z-index: 1040;
         }
 
         .navbar-brand {
@@ -41,6 +50,21 @@
         .navbar-nav .nav-link:hover {
         color: #007bff !important;
         text-decoration: underline;
+        }
+
+        body {
+            padding-top: 125px; /* padding for locked header */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000; /* ensure it stays above other elements */
         }
     </style>
 </head>
@@ -172,14 +196,15 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container d-flex justify-content-center">
-            &copy; 2025 - fourHorsemen_Online_Video_Game_Database -
-            <a asp-area="" asp-controller="Home" asp-action="About">About Us</a> - 
-            <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a> -
-            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> - 
-            <a asp-area="" asp-controller="Home" asp-action="Admin">Admin</a>
+        <div class="container d-flex justify-content-center align-items-center">
+            <span class="me-1">&copy; 2025 - fourHorsemen_Online_Video_Game_Database:</span>
+            <a asp-area="" asp-controller="Home" asp-action="About" class="mx-1">About Us</a> -
+            <a asp-area="" asp-controller="Home" asp-action="Contact" class="mx-1">Contact Us</a> -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy" class="mx-1">Privacy</a> -
+            <a asp-area="" asp-controller="Home" asp-action="Admin" class="mx-1">Admin</a>
         </div>
     </footer>
+
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
