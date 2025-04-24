@@ -17,12 +17,29 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             _newsService = newsService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-           
 
-            var news = await _newsService.GetNewsAsync();
-            return View(news); // pass to Index.cshtml
+
+            int itemsPerPage = 20; //number of news items per page
+            var allNews = await _newsService.GetNewsAsync();
+            var totalItems = allNews.Count;
+            var totalPages = (int)Math.Ceiling(totalItems / (double)itemsPerPage);
+
+            // Get the news items for the current page
+            var newsForPage = allNews.Skip((page - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+
+            // Create a pagination object to pass to the view
+            var pagination = new PaginationViewModel
+            {
+                CurrentPage = page,
+                TotalPages = totalPages
+            };
+
+            // Pass the news items and pagination to the view
+            ViewBag.Pagination = pagination;
+
+            return View(newsForPage);
         }
 
         public IActionResult Privacy()
