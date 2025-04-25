@@ -56,12 +56,20 @@
             padding-top: 125px; /* padding for locked header */
         }
 
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+        }
+
         footer {
             position: fixed;
             bottom: 0;
             width: 100%;
             background-color: #222;
             color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             padding: 10px 0;
             z-index: 1000; /* ensure it stays above other elements */
@@ -88,65 +96,103 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle @(currentController == "Games" && currentAction == "SystemGamesList" ? "active" : "")"
-                        href="#" id="systemsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           href="#" id="systemsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Systems
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="systemsDropdown">
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps5">Sony PlayStation5</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps4">Sony PlayStation4</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps3">Sony PlayStation3</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps2">Sony PlayStation2</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps1">Sony PlayStation</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_vita">Sony Vita</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_psp">Sony PSP</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox_sx">Microsoft Xbox Series S/X</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox_one">Microsoft Xbox One</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox_360">Microsoft Xbox 360</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox">Microsoft Xbox</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_switch">Nintendo Switch</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_wii_u">Nintendo Wii U</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_wii">Nintendo Wii</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gamecube">Nintendo GameCube</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_64">Nintendo 64</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=snes">Super Nintendo</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nes">Nintendo</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_3ds">Nintendo 3DS</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_ds">Nintendo DS</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gba">Nintendo GameBoy Advance</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gbc">Nintendo GameBoy Color</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gb">Nintendo GameBoy</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_dreamcast">Sega Dreamcast</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_saturn">Sega Saturn</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_32x">Sega 32X</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_cd">Sega CD</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_genesis">Sega Genesis</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_master_system">Sega Master System</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_gamegear">Sega GameGear</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_jaguar">Atari Jaguar</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_7800">Atari 7800</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_5200">Atari 5200</a></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_2600">Atari 2600</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_lynx">Atari Lynx</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=panasonic_3do">Panasonic 3DO</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Games/SystemGamesList?system=snk_neogeo">SNK Neo Geo</a></li>
+
+                            <!-- Sony -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Sony</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps5">PlayStation 5</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps4">PlayStation 4</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps3">PlayStation 3</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps2">PlayStation 2</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_ps1">PlayStation</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_vita">PlayStation Vita</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sony_psp">PlayStation Portable</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Microsoft -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Microsoft</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox_sx">Xbox Series S/X</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox_one">Xbox One</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox_360">Xbox 360</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=ms_xbox">Xbox</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Nintendo -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Nintendo</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_switch">Switch</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_wii_u">Wii U</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_wii">Wii</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gamecube">GameCube</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_64">Nintendo 64</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=snes">Super Nintendo</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nes">Nintendo</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_3ds">3DS</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_ds">DS</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gba">GameBoy Advance</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gbc">GameBoy Color</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=nintendo_gb">GameBoy</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Sega -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Sega</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_dreamcast">Dreamcast</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_saturn">Saturn</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_32x">32X</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_cd">CD</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_genesis">Genesis</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_master_system">Master System</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=sega_gamegear">GameGear</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Atari -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Atari</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_jaguar">Jaguar</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_7800">7800</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_5200">5200</a></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_2600">2600</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=atari_lynx">Lynx</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Panasonic -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Panasonic</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=panasonic_3do">3DO</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- SNK -->
+                            <li class="dropdown-submenu dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">SNK</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Games/SystemGamesList?system=snk_neogeo">Neo Geo</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link @(currentController == "Home" && currentAction == "History" ? "active" : "")"
                         href="/History">History</a>
@@ -205,6 +251,36 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Enable hover or click for nested dropdowns
+            document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    let nextDropdown = this.nextElementSibling;
+
+                    // Close other open submenus
+                    document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (submenu) {
+                        if (submenu !== nextDropdown) {
+                            submenu.classList.remove('show');
+                        }
+                    });
+
+                    if (nextDropdown) {
+                        nextDropdown.classList.toggle('show');
+                    }
+                });
+            });
+
+            // Close submenu if clicking outside
+            document.addEventListener('click', function (e) {
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (submenu) {
+                    submenu.classList.remove('show');
+                });
+            });
+        });
+    </script>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
