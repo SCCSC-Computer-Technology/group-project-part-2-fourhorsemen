@@ -1,81 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\",
+  "WorkspaceRootPath": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\games\\systemgameslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\games\\systemgameslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\games\\systemgameslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\account\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\account\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\account\\favorites.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\account\\usergames.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\account\\usergames.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\account\\usergames.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\models\\usergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\models\\usergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:models\\usergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\models\\gamedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\models\\gamedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:models\\gamedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:data\\gamedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\services\\funfactsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\services\\funfactsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:services\\funfactsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\models\\funfacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\joshp\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\models\\funfacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:models\\funfacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,11 +98,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -105,74 +117,78 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T20:27:17.941Z",
+              "WhenOpened": "2025-04-23T20:27:17.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-21T22:58:26.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T01:31:26.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T16:17:35.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SystemGamesList.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Games\\SystemGamesList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Games\\SystemGamesList.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Games\\SystemGamesList.cshtml",
-              "RelativeToolTip": "Views\\Games\\SystemGamesList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T22:44:24.004Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAMwD4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T16:16:49.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Admin.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Admin.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Admin.cshtml",
-              "RelativeToolTip": "Views\\Home\\Admin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T20:38:04.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T20:26:46.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "Views\\Home\\Contact.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-23T20:26:50.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAK0AAAAAAAAAAAAswGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -181,35 +197,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-21T22:58:26.795Z"
+              "DocumentIndex": 8,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T20:26:50.537Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T01:31:26.591Z"
+              "WhenOpened": "2025-04-23T20:26:46.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAKoAAAAAAAAAAAAowKUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -217,11 +233,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "UserGame.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\UserGame.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\UserGame.cs",
               "RelativeDocumentMoniker": "Models\\UserGame.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\UserGame.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\UserGame.cs",
               "RelativeToolTip": "Models\\UserGame.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,11 +245,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserGames.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\UserGames.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\UserGames.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\UserGames.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\UserGames.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\UserGames.cshtml",
               "RelativeToolTip": "Views\\Account\\UserGames.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -241,11 +257,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Favorites.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Favorites.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Favorites.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Favorites.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Favorites.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Favorites.cshtml",
               "RelativeToolTip": "Views\\Account\\Favorites.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -253,11 +269,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "GamesController.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\GamesController.cs",
               "RelativeToolTip": "Controllers\\GamesController.cs",
               "ViewState": "AgIAABcBAAAAAAAAAAAUwCEBAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -265,11 +281,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "History.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\History.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\History.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\History.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\History.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\History.cshtml",
               "RelativeToolTip": "Views\\Home\\History.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -277,11 +293,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "SystemGamesList.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Games\\SystemGamesList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Games\\SystemGamesList.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Games\\SystemGamesList.cshtml",
+              "RelativeToolTip": "Views\\Games\\SystemGamesList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T22:44:24.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Admin.cshtml",
+              "RelativeToolTip": "Views\\Home\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T20:38:04.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -289,11 +329,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "FunFacts.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\FunFacts.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\FunFacts.cs",
               "RelativeDocumentMoniker": "Models\\FunFacts.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\FunFacts.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\FunFacts.cs",
               "RelativeToolTip": "Models\\FunFacts.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -301,11 +341,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "GameDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Data\\GameDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Data\\GameDBContext.cs",
               "RelativeDocumentMoniker": "Data\\GameDBContext.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Data\\GameDBContext.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Data\\GameDBContext.cs",
               "RelativeToolTip": "Data\\GameDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -313,11 +353,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "GameDetailsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\GameDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\GameDetailsViewModel.cs",
               "RelativeDocumentMoniker": "Models\\GameDetailsViewModel.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\GameDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\GameDetailsViewModel.cs",
               "RelativeToolTip": "Models\\GameDetailsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -325,11 +365,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "FunFactsService.cs",
-              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\FunFactsService.cs",
+              "DocumentMoniker": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\FunFactsService.cs",
               "RelativeDocumentMoniker": "Services\\FunFactsService.cs",
-              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\FunFactsService.cs",
+              "ToolTip": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\FunFactsService.cs",
               "RelativeToolTip": "Services\\FunFactsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

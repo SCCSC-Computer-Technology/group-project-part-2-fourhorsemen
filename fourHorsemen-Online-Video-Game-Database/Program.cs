@@ -42,6 +42,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
 })
+.AddRoles<IdentityRole>() //adding Roles
 .AddEntityFrameworkStores<GameDBContext>();
 
 builder.Services.AddTransient<IEmailSender, EmailSender>();
@@ -69,6 +70,9 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapRazorPages();
+app.MapControllers();
 
 app.MapControllerRoute(
     name: "default",

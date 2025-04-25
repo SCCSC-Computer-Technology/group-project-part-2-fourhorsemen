@@ -1,3 +1,4 @@
+using System.Data;
 using System.Diagnostics;
 using fourHorsemen_Online_Video_Game_Database.Models;
 using fourHorsemen_Online_Video_Game_Database.Services;
@@ -59,9 +60,10 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             return View(categorizedFacts);
         }
 
+        [Authorize(Roles = "Administrators")]
         public IActionResult Admin()
         {
-            [Authorize(Role="Administrators")]
+           
             return View();
         }
 
