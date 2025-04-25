@@ -1,0 +1,83 @@
+﻿@model GameDetailsViewModel
+<style>
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .details-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+        .details-container h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #dc3545;
+            text-align: center;
+        }
+
+        .details-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 10px 20px;
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+</style>
+
+<div class="details-container">
+    <h1>@Model.Title</h1>
+    <div class="text-center mb-4">
+        <img src="@Model.CoverImageUrl" alt="@Model.Title Cover" style="max-width: 100%; height: auto; border-radius: 10px;" />
+    </div>
+        <ul>
+            <li><strong>Description:</strong> @Model.Description</li>
+            <li><strong>Developer:</strong> @Model.Developer</li>
+            <li><strong>Publisher:</strong> @Model.Publisher</li>
+            <li><strong>Platform:</strong> @Model.Platform</li>
+            <li><strong>Release Date:</strong> @Model.ReleaseDate</li>
+            <li><strong>Players:</strong> @Model.Players</li>
+            <li><strong>Sales:</strong> @Model.Sales</li>
+        </ul>
+
+    <div class="category-buttons" style="margin-top: 20px; text-align: center;">
+        <form asp-action="AddToFavorites" method="post" style="display:inline;">
+            <input type="hidden" name="title" value="@Model.Title" />
+            <button type="submit" class="btn btn-danger">❤️ Add to Favorites</button>
+        </form>
+        <form asp-action="AddToOwned" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-success">🎮 Add to Owned</button>
+        </form>
+        <form asp-action="AddToWishlist" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-warning">📌 Add to Wishlist</button>
+        </form>
+        <form asp-action="AddToDefeated" asp-route-title="@Model.Title" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-primary">✔️ Mark as Defeated</button>
+        </form>
+    </div>
+</div>
+<div class="mb-3">
+    <a href="javascript:history.back()" class="btn btn-secondary">
+        ← Back to Game List
+    </a>
+</div>

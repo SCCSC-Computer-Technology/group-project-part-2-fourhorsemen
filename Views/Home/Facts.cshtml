@@ -1,0 +1,68 @@
+﻿@using fourHorsemen_Online_Video_Game_Database.Services
+
+@model List<FactCategory>
+
+@{
+    ViewData["Title"] = "Secret Kingdom - Did You Know?";
+}
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<div class="did-you-know">
+    @foreach (var category in Model)
+    {
+        <h3 class="text-center">
+            <span class="section-emoji">@category.Emoji</span> @category.Title
+        </h3>
+
+        <ul>
+            @foreach (var fact in category.Facts)
+            {
+                <li>@fact</li>
+            }
+        </ul>
+    }
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+        color: #111;
+    }
+
+    h3.text-center {
+        margin-top: 2em; /*add space above each category*/
+    }
+
+
+    .did-you-know ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .did-you-know li::before {
+        content: "🎮 ";
+        margin-right: .3em;
+    }
+
+    .did-you-know li {
+        margin-bottom: .5em;
+    }
+
+    .section-emoji {
+        margin-right: .3em;
+    }
+
+    .did-you-know {
+        max-width: 700px; /* sets width of the container */
+        margin: 0 auto; /* centers block horizontally, first is top/bottom, second splits even on page*/
+        padding: 0 1em; /* optional: adds a little side padding on smaller screens */
+    }
+
+    .did-you-know ul {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: left; /* ensure text isn't centered */
+    }
+</style>
+

@@ -1,0 +1,130 @@
+﻿@{
+    //use the main layout for all pages
+    Layout = "_Layout";
+}
+@{
+    //using ViewBag to set the page title dynamically
+    ViewData["Title"] = ViewBag.SystemTitle;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>  <!-- Dynamic title based on system -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Audiowide', cursive;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Force 3 columns */
+            gap: 10px;
+            padding: 0px;
+        }
+
+        .game-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 85px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+            .game-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            .game-item a {
+                font-size: 20px;
+                text-decoration: underline;
+                color: #007bff;
+                transition: color 0.2s ease;
+            }
+
+                .game-item a:hover {
+                    color: blue;
+                }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-danger" style="font-family: 'Audiowide', cursive">@ViewData["Title"]</h1>
+        <form method="get" asp-controller="Games" asp-action="SystemGamesList">
+            <input type="hidden" name="system" value="@ViewBag.System" />
+            <div class="form-group">
+                <input type="text" name="searchString" value="@ViewBag.SearchString" class="form-control" placeholder="Search by title..." />
+            </div>
+            <button type="submit" class="btn btn-primary mt-2 mb-4">Search</button>
+        </form>
+        <div class="text-center mb-3">
+            <strong>Filter by first letter:</strong><br />
+            @foreach (char c in Enumerable.Range('A', 26).Select(i => (char)i))
+            {
+                <a asp-controller="Games"
+                   asp-action="SystemGamesList"
+                   asp-route-system="@ViewBag.System"
+                   asp-route-startsWith="@c"
+                   class="btn btn-sm @(ViewBag.StartsWith?.ToString() == c.ToString() ? "btn-primary" : "btn-outline-secondary") m-1">
+                    @c
+                </a>
+            }
+            <a asp-controller="Games"
+               asp-action="SystemGamesList"
+               asp-route-system="@ViewBag.System"
+               class="btn btn-sm @(string.IsNullOrEmpty(ViewBag.StartsWith) ? "btn-primary" : "btn-outline-secondary") m-1">
+                All
+            </a>
+        </div>
+        <div class="game-list">
+            @{
+                string CleanSlug(string title)
+                {
+                    // Remove special characters that might break URLs
+                    var invalidChars = new[] { ":", ",", ".", "'", "\"", "(", ")", "[", "]", "!", "?", "&", "/" };
+                    foreach (var c in invalidChars)
+                    {
+                        title = title.Replace(c, "");
+                    }
+                    return title.ToLower().Replace(" ", "-");
+                }
+
+                //remove comma at end of game titles for displaying the list
+                string CleanDisplayTitle(string title)
+                {
+                    return title.TrimEnd(',', ' ');
+                }
+            }
+
+            @foreach (var game in Model)
+            {
+                <div class="game-item">
+                    <a asp-controller="Games" asp-action="GameDetails" asp-route-slug="@CleanSlug(game.Title)">
+                        @CleanDisplayTitle(game.Title)
+                    </a>
+                </div>
+            }
+
+        </div>
+    </div>
+</body>
+</html>
