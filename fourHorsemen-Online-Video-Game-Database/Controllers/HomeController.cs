@@ -60,6 +60,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
         public IActionResult Admin()
         {
+            [Authorize(Role="Administrators")]
             return View();
         }
 
