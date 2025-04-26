@@ -8,7 +8,7 @@ public class GameNewsService
     {
         "https://www.pcgamer.com/rss/",
         "https://www.gamespot.com/feeds/news/",
-        "https://kotaku.com/rss",
+        "https://www.nintendolife.com/feeds/latest",
         "https://www.ign.com/rss",
         "https://www.giantbomb.com/feeds/news/",
         "https://www.gameinformer.com/rss"
