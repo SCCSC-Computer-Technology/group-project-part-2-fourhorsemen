@@ -1,6 +1,90 @@
 ﻿@{
-    ViewData["Title"] = "History of Video Games";
+    ViewData["Title"] = "A Brief History of Video Games";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail the history of video games.</p>
+<style>
+    .timeline {
+        border-left: 3px solid #007bff;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+
+    .event {
+        margin-bottom: 30px;
+    }
+
+        .event h4 {
+            color: #007bff;
+        }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<div class="container mt-4">
+    <div class="timeline">
+        <div class="event">
+            <h4>1958 - "Tennis for Two"</h4>
+            <p>Physicist William Higinbotham creates a basic tennis game displayed on an oscilloscope — one of the first video games ever made.</p>
+        </div>
+        <div class="event">
+            <h4>1972 - Pong and Atari</h4>
+            <p>Atari releases Pong, the first commercially successful arcade game, and helps establish video gaming as an entertainment industry.</p>
+        </div>
+        <div class="event">
+            <h4>1977 - Atari 2600 Launches</h4>
+            <p>The Atari 2600 popularizes home consoles with interchangeable cartridges, bringing video games into living rooms across America.</p>
+        </div>
+        <div class="event">
+            <h4>1980 - Pac-Man Fever</h4>
+            <p>Namco's Pac-Man becomes a cultural icon, introducing character-driven games and attracting a wider audience, including female gamers.</p>
+        </div>
+        <div class="event">
+            <h4>1983 - Video Game Crash</h4>
+            <p>Oversaturation of poor-quality games leads to a major industry crash in North America, shaking consumer confidence.</p>
+        </div>
+        <div class="event">
+            <h4>1985 - NES Revives Gaming</h4>
+            <p>Nintendo releases the NES in North America, saving the industry with strict quality control and blockbuster hits like Super Mario Bros.</p>
+        </div>
+        <div class="event">
+            <h4>1989 - Game Boy Revolution</h4>
+            <p>Nintendo's Game Boy brings portable gaming to the masses, bundled with the timeless puzzle game Tetris.</p>
+        </div>
+        <div class="event">
+            <h4>1991 - Sonic the Hedgehog</h4>
+            <p>Sega introduces Sonic, helping the Sega Genesis challenge Nintendo's dominance with faster, edgier gameplay.</p>
+        </div>
+        <div class="event">
+            <h4>1994 - Sony PlayStation</h4>
+            <p>The PlayStation debuts, making 3D gaming mainstream and bringing gaming to an older audience.</p>
+        </div>
+        <div class="event">
+            <h4>1996 - Nintendo 64 and 3D Worlds</h4>
+            <p>The Nintendo 64 launches with Super Mario 64, setting new standards for 3D platforming and game design.</p>
+        </div>
+        <div class="event">
+            <h4>2001 - Xbox and Online Play</h4>
+            <p>Microsoft enters the console market with the Xbox and introduces Xbox Live, laying the foundation for modern online console gaming.</p>
+        </div>
+        <div class="event">
+            <h4>2006 - Wii Changes the Game</h4>
+            <p>The Nintendo Wii makes motion controls mainstream and expands gaming to a broader, family-oriented audience.</p>
+        </div>
+        <div class="event">
+            <h4>2013 - PlayStation 4 and Xbox One</h4>
+            <p>The eighth generation of consoles pushes high-definition gaming, digital downloads, and streaming into the spotlight.</p>
+        </div>
+        <div class="event">
+            <h4>2017 - Nintendo Switch</h4>
+            <p>Nintendo merges handheld and console gaming into one hybrid device, finding huge success worldwide.</p>
+        </div>
+        <div class="event">
+            <h4>2020 - Next-Gen: PlayStation 5 and Xbox Series X</h4>
+            <p>New consoles launch with powerful hardware, focusing on ultra-fast load times, 4K graphics, and immersive experiences.</p>
+        </div>
+    </div>
+</div>
