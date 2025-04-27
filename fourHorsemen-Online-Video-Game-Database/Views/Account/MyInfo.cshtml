@@ -1,10 +1,21 @@
 ﻿@model fourHorsemen_Online_Video_Game_Database.ViewModels.MyInfoViewModel
 
+
+
+
 <div class="container mt-4">
     <h2>My Profile</h2>
     <hr />
     <div class="row">
         <div class="col-md-6">
+
+            <img src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/images/default-avatar.png" : Model.AvatarUrl)" alt="Avatar" class="img-thumbnail" style="width: 150px; height: 150px;" />
+
+            <form asp-action="UploadAvatar" asp-controller="Account" enctype="multipart/form-data" method="post" id="avatarForm">
+                <input type="file" name="avatarFile" id="avatarFileInput" style="display: none;" onchange="document.getElementById('avatarForm').submit();" />
+            </form>
+
+            <a href="#" onclick="document.getElementById('avatarFileInput').click(); return false;">Change Avatar</a><br />
             <p><strong>Username:</strong> @Model.Username</p>
             <p>
                 <a asp-action="ChangeUsername" class="btn btn-link">Change Username</a>

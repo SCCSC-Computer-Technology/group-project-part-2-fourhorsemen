@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace fourHorsemen_Online_Video_Game_Database.Data
 {
-    public class GameDBContext : IdentityDbContext<IdentityUser>
+    public class GameDBContext : IdentityDbContext<SiteUser>
     {
         public GameDBContext(DbContextOptions<GameDBContext> options) 
             : base(options) 

@@ -61,19 +61,27 @@
         </ul>
 
     <div class="category-buttons" style="margin-top: 20px; text-align: center;">
-        <form asp-action="AddToFavorites" method="post" style="display:inline;">
-            <input type="hidden" name="title" value="@Model.Title" />
+
+        <!-- Add to Favorites Form -->
+        <form asp-action="AddToFavorites" asp-route-title="@Model.Title" method="post" id="favoritesForm_@Model.Title" style="display:inline;">
             <button type="submit" class="btn btn-danger">❤️ Add to Favorites</button>
         </form>
-        <form asp-action="AddToOwned" asp-route-title="@Model.Title" method="post" style="display:inline;">
+
+        <!-- Add to Owned Form -->
+        <form asp-action="AddToOwned" asp-route-title="@Model.Title" method="post" id="ownedForm_@Model.Title" style="display:inline;">
             <button type="submit" class="btn btn-success">🎮 Add to Owned</button>
         </form>
-        <form asp-action="AddToWishlist" asp-route-title="@Model.Title" method="post" style="display:inline;">
+
+        <!-- Add to Wishlist Form -->
+        <form asp-action="AddToWishlist" asp-route-title="@Model.Title" method="post" id="wishlistForm_@Model.Title" style="display:inline;">
             <button type="submit" class="btn btn-warning">📌 Add to Wishlist</button>
         </form>
-        <form asp-action="AddToDefeated" asp-route-title="@Model.Title" method="post" style="display:inline;">
+
+        <!-- Mark as Defeated Form -->
+        <form asp-action="AddToDefeated" asp-route-title="@Model.Title" method="post" id="defeatedForm_@Model.Title" style="display:inline;">
             <button type="submit" class="btn btn-primary">✔️ Mark as Defeated</button>
         </form>
+
     </div>
 </div>
 <div class="mb-3">
@@ -81,3 +89,42 @@
         ← Back to Game List
     </a>
 </div>
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    // For all the forms: Owned, Wishlist, Defeated, Favorites
+    $("form[id^='ownedForm_'], form[id^='wishlistForm_'], form[id^='defeatedForm_'], form[id^='favoritesForm_']").submit(function (e) {
+        e.preventDefault(); // Prevent the form from submitting the traditional way
+
+        var form = $(this); // Get the current form
+        var button = form.find("button"); // Get the button inside the form
+        var title = form.find("input[name='title']").val(); // Get the game title from the input field
+
+        // Show a loading state or disable the button
+        button.prop("disabled", true);
+        button.text("Adding...");
+
+        // Submit the form data via AJAX
+        $.ajax({
+            url: form.attr("action"), // Get the form's action URL
+            type: 'POST', // Use POST method
+            data: form.serialize(), // Serialize the form data
+            success: function (response) {
+                // On success, change the button text to a checkmark for the respective category
+                button.html("✔ Added to " + (form.attr("id").includes("owned") ? "Owned" : form.attr("id").includes("wishlist") ? "Wishlist" : form.attr("id").includes("defeated") ? "Defeated" : "Favorites"));
+                button.prop("disabled", true); // Optionally disable the button to prevent further clicks
+            },
+            error: function () {
+                // In case of error, reset the button to its original state
+                button.text("Error, try again");
+            }
+        });
+    });
+});
+
+</script>
+

@@ -238,10 +238,46 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 FavoritesCount = favoritesCount,
                 OwnedCount = ownedCount,
                 WishlistCount = wishlistCount,
-                DefeatedCount = defeatedCount
+                DefeatedCount = defeatedCount,
+                AvatarUrl = user.AvatarUrl
             };
             return View(viewModel);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UploadAvatar(IFormFile avatarFile)
+        {
+            if (avatarFile != null && avatarFile.Length > 0)
+            {
+                var user = await _userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    return RedirectToAction("Login");
+                }
+
+                // Save the file to wwwroot/uploads/avatars/
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "avatars");
+                Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = $"{user.Id}_{Path.GetFileName(avatarFile.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await avatarFile.CopyToAsync(stream);
+                }
+
+                // Update the user's AvatarUrl
+                user.AvatarUrl = "/uploads/avatars/" + fileName;
+                await _userManager.UpdateAsync(user);
+
+                return RedirectToAction("MyInfo");
+            }
+
+            return RedirectToAction("MyInfo");
+        }
+
 
         [HttpGet]
         public async Task<IActionResult> ChangeUsername()

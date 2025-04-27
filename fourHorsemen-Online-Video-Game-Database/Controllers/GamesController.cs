@@ -18,10 +18,11 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         //service to fetch game data from rawg api
         private readonly RawgApiService _apiService;
         private readonly GameDBContext _context;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<SiteUser> _userManager;
+        private readonly string _csvFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "games.csv");
 
         //cosnstructor that injects the rawg api service
-        public GamesController(RawgApiService apiService, GameDBContext context, UserManager<IdentityUser> userManager)
+        public GamesController(RawgApiService apiService, GameDBContext context, UserManager<SiteUser> userManager)
         {
             _apiService = apiService;
             _context = context;
@@ -286,8 +287,25 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             return View(viewModel);
         }
 
+        //Helper method to read .csv files
+        private List<string> GetGameTitlesFromCsv()
+        {
+            var titles = System.IO.File.ReadAllLines(_csvFilePath)
+                .Where(line => !string.IsNullOrWhiteSpace(line)) // Remove empty lines
+                .ToList();
+
+            // Log titles for debugging
+            Console.WriteLine("Loaded titles from CSV: ");
+            foreach (var title in titles)
+            {
+                Console.WriteLine(title);
+            }
+
+            return titles;
+        }
+
+        // Add to Favorites
         [HttpPost]
-        [Route("Games/Favorites")]
         public async Task<IActionResult> AddToFavorites(string title)
         {
             var user = await _userManager.GetUserAsync(User);
@@ -296,22 +314,22 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 return Challenge(); // Not logged in
             }
 
-            var game = await _context.Games.FirstOrDefaultAsync(g => g.Title == title);
-            if (game == null)
+            // Check if the game exists in the CSV
+            var gameTitles = GetGameTitlesFromCsv();
+            if (!gameTitles.Contains(title))
             {
-                return NotFound(); // Game not found
+                return NotFound(); // Game not found in the CSV
             }
 
-            // Optional: Prevent duplicates
             var alreadyFavorited = await _context.UserGames
-                .AnyAsync(ug => ug.UserId == user.Id && ug.Game.Id == game.Id && ug.Category == GameCategory.Favorite);
+                .AnyAsync(ug => ug.UserId == user.Id && ug.GameTitle == title && ug.Category == GameCategory.Favorite);
 
             if (!alreadyFavorited)
             {
                 var userGame = new UserGame
                 {
                     UserId = user.Id,
-                    Game = game,
+                    GameTitle = title,
                     Category = GameCategory.Favorite
                 };
 
@@ -319,28 +337,117 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToAction("GameDetails", new { slug = title });
+            return Json(new { success = true, gameTitle = title });
         }
 
+        // Add to Owned
         [HttpPost]
-        public IActionResult AddToOwned(string title)
+        public async Task<IActionResult> AddToOwned(string title)
         {
-            // TODO: Add logic to mark game as owned
-            return RedirectToAction("GameDetails", new { slug = title });
+            // Check if the game exists in the CSV
+            var gameTitles = GetGameTitlesFromCsv();
+            if (!gameTitles.Contains(title))
+            {
+                return NotFound(); // Game not found in the CSV
+            }
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Challenge(); // User is not logged in
+            }
+
+            var alreadyOwned = await _context.UserGames
+                .AnyAsync(ug => ug.UserId == user.Id && ug.GameTitle == title && ug.Category == GameCategory.Owned);
+
+            if (!alreadyOwned)
+            {
+                var userGame = new UserGame
+                {
+                    UserId = user.Id,
+                    GameTitle = title,
+                    Category = GameCategory.Owned
+                };
+
+                _context.UserGames.Add(userGame);
+                await _context.SaveChangesAsync();
+            }
+
+            return Json(new { success = true });
         }
 
+        // Add to Wishlist
         [HttpPost]
-        public IActionResult AddToWishlist(string title)
+        public async Task<IActionResult> AddToWishlist(string title)
         {
-            // TODO: Add logic to add game to wishlist
-            return RedirectToAction("GameDetails", new { slug = title });
+            // Check if the game exists in the CSV
+            var gameTitles = GetGameTitlesFromCsv();
+            if (!gameTitles.Contains(title))
+            {
+                return NotFound(); // Game not found in the CSV
+            }
+
+            // Logic to add the game to the wishlist (e.g., create a new user-game relation)
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Challenge(); // Not logged in
+            }
+
+            // Optional: Prevent duplicates
+            var alreadyInWishlist = await _context.UserGames
+                .AnyAsync(ug => ug.UserId == user.Id && ug.GameTitle == title && ug.Category == GameCategory.Wishlist);
+
+            if (!alreadyInWishlist)
+            {
+                var userGame = new UserGame
+                {
+                    UserId = user.Id,
+                    GameTitle = title,
+                    Category = GameCategory.Wishlist
+                };
+
+                _context.UserGames.Add(userGame);
+                await _context.SaveChangesAsync();
+            }
+
+            return Json(new { success = true, gameTitle = title });
         }
 
+        // Add to Defeated
         [HttpPost]
-        public IActionResult AddToDefeated(string title)
+        public async Task<IActionResult> AddToDefeated(string title)
         {
-            // TODO: Add logic to mark game as defeated
-            return RedirectToAction("GameDetails", new { slug = title });
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Challenge(); // Not logged in
+            }
+
+            // Check if the game exists in the CSV
+            var gameTitles = GetGameTitlesFromCsv();
+            if (!gameTitles.Contains(title))
+            {
+                return NotFound(); // Game not found in the CSV
+            }
+
+            var alreadyDefeated = await _context.UserGames
+                .AnyAsync(ug => ug.UserId == user.Id && ug.GameTitle == title && ug.Category == GameCategory.Defeated);
+
+            if (!alreadyDefeated)
+            {
+                var userGame = new UserGame
+                {
+                    UserId = user.Id,
+                    GameTitle = title,
+                    Category = GameCategory.Defeated
+                };
+
+                _context.UserGames.Add(userGame);
+                await _context.SaveChangesAsync();
+            }
+
+            return Json(new { success = true, gameTitle = title });
         }
 
 

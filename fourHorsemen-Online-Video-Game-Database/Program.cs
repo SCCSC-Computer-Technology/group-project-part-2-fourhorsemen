@@ -22,6 +22,8 @@ builder.Services.AddSingleton<FunFactsService>();
 
 builder.Services.AddSingleton<GameNewsService>();
 
+builder.Services.AddScoped<GameImportService>();
+
 
 AppDomain.CurrentDomain.SetData("DataDirectory", Path.Combine(Directory.GetCurrentDirectory(), "Data"));
 

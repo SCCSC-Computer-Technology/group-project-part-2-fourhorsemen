@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\fourHorsemen-Online-Video-Game-Database.ausw8r4wnv.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\Images\\default-avatar.jpg",
+      "PackagePath": "staticwebassets\\Images\\default-avatar.jpg"
+    },
+    {
       "Id": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\atari_2600_games.csv",
       "PackagePath": "staticwebassets\\atari_2600_games.csv"
     },
@@ -391,6 +395,10 @@
     {
       "Id": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\sony_vita_games.csv",
       "PackagePath": "staticwebassets\\sony_vita_games.csv"
+    },
+    {
+      "Id": "C:\\Users\\joshp\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\uploads\\avatars\\492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.fourHorsemen-Online-Video-Game-Database.props",

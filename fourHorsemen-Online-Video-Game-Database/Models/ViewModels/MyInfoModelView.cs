@@ -10,6 +10,7 @@
         public int OwnedCount { get; set; }
         public int WishlistCount { get; set; }
         public int DefeatedCount { get; set; }
+        public string AvatarUrl { get; set; }
 
 
     }

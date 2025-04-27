@@ -12,6 +12,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Models
 
         public string GameTitle { get; set; }
         public Game Game { get; set; }
+        public int GameId { get; set; }
 
         public GameCategory Category { get; set; }
     }

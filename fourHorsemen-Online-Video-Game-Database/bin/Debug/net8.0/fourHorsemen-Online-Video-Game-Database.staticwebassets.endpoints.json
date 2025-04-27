@@ -2223,6 +2223,88 @@
       ]
     },
     {
+      "Route": "Images/default-avatar.c2y2a1irbg.jpg",
+      "AssetFile": "Images/default-avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DBn4vYuhuE21T7i02FnrpNFQyJzLptaHj07dO8I0568=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 13:34:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c2y2a1irbg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DBn4vYuhuE21T7i02FnrpNFQyJzLptaHj07dO8I0568="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/default-avatar.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "Images/default-avatar.jpg",
+      "AssetFile": "Images/default-avatar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DBn4vYuhuE21T7i02FnrpNFQyJzLptaHj07dO8I0568=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 13:34:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DBn4vYuhuE21T7i02FnrpNFQyJzLptaHj07dO8I0568="
+        }
+      ]
+    },
+    {
       "Route": "atari_2600_games.437xqkhl68.csv",
       "AssetFile": "atari_2600_games.csv",
       "Selectors": [],
@@ -10255,6 +10337,88 @@
         {
           "Name": "label",
           "Value": "sony_vita_games.csv"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.oi9wppkvqn.png",
+      "AssetFile": "uploads/avatars/492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0EqBMqnB0X6USEQeZHFGgI1J3PkHC/J6H3mIlB2cEQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 13:41:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oi9wppkvqn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0EqBMqnB0X6USEQeZHFGgI1J3PkHC/J6H3mIlB2cEQ4="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png",
+      "AssetFile": "uploads/avatars/492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0EqBMqnB0X6USEQeZHFGgI1J3PkHC/J6H3mIlB2cEQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 13:41:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0EqBMqnB0X6USEQeZHFGgI1J3PkHC/J6H3mIlB2cEQ4="
         }
       ]
     }

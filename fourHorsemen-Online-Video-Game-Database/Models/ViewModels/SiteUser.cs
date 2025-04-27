@@ -7,6 +7,8 @@ namespace fourHorsemen_Online_Video_Game_Database.Models
     {
         public DateTime JoinDate { get; set; }
 
-        // add anything else you want on the profile later (e.g., Bio, AvatarURL, etc)
+        public string AvatarUrl { get; set; }
+
+        
     }
 }

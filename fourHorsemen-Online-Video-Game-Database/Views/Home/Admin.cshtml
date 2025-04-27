@@ -4,8 +4,16 @@
 
 <h1 class="text-center">@ViewData["Title"]</h1>
 
+
+<form asp-controller="Home" asp-action="ImportGames" method="post">
+    <button type="submit" class="btn btn-primary">Import All Games to Database</button>
+</form>
+
 <div class="container" style="max-width: 600px; margin: auto; text-align: center; line-height: 1.6;">
 <p><h5><u>Generate/Update Game CSVs</u></h5></p>
+
+   
+
 
     <h5 style="margin-top: 30px;">Sony:</h5>
     <ul style="list-style-type: none; padding-left: 0;">
