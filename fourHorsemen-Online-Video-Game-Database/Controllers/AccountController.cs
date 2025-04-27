@@ -38,18 +38,21 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
-
-                if (result.Succeeded)
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user != null)
                 {
-                    return RedirectToLocal(returnUrl);
+                    var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
+
+                    if (result.Succeeded)
+                    {
+                        return RedirectToLocal(returnUrl);
+                    }
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid login attempt");
-
             }
-            return View(model);
 
+            return View(model);
         }
 
         private IActionResult RedirectToLocal(string returnUrl)
@@ -75,7 +78,13 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             if (ModelState.IsValid)
             {
 
-                var user = new SiteUser { UserName = model.Email, Email = model.Email };
+                var user = new SiteUser
+                {
+                    UserName = model.Username,
+                    Email = model.Email,
+                    JoinDate = DateTime.UtcNow
+                };
+
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
@@ -210,20 +219,78 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
 
         public async Task<IActionResult> MyInfo()
         {
+            var user = await _userManager.GetUserAsync(User) as SiteUser;
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var favoritesCount = await _context.UserGames.CountAsync(ug => ug.UserId == user.Id && ug.Category == GameCategory.Favorite);
+            var ownedCount = await _context.UserGames.CountAsync(ug => ug.UserId == user.Id && ug.Category == GameCategory.Owned);
+            var wishlistCount = await _context.UserGames.CountAsync(ug => ug.UserId == user.Id && ug.Category == GameCategory.Wishlist);
+            var defeatedCount = await _context.UserGames.CountAsync(ug => ug.UserId == user.Id && ug.Category == GameCategory.Defeated);
+
+            var viewModel = new MyInfoViewModel
+            {
+                Username = user.UserName,
+                Email = user.Email,
+                JoinDate = user.JoinDate,
+                FavoritesCount = favoritesCount,
+                OwnedCount = ownedCount,
+                WishlistCount = wishlistCount,
+                DefeatedCount = defeatedCount
+            };
+            return View(viewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ChangeUsername()
+        {
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
                 return RedirectToAction("Login");
             }
 
-            var viewModel = new MyInfoViewModel
+            var model = new ChangeUsernameViewModel
             {
-                Username = user.UserName,
-                Email = user.Email,
-                JoinDate = user.JoinDate
+                CurrentUsername = user.UserName
             };
 
-            return View(viewModel);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ChangeUsername(ChangeUsernameViewModel model)
+        {
+            if (string.IsNullOrWhiteSpace(model.NewUsername))
+            {
+                ModelState.AddModelError(string.Empty, "Username cannot be empty.");
+                return View(model);
+            }
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            user.UserName = model.NewUsername;
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+                TempData["Success"] = "Username updated successfully!";
+                return RedirectToAction("MyInfo");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return View(model);
         }
 
 

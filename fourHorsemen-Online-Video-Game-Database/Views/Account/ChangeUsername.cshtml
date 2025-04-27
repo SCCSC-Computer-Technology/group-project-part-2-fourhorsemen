@@ -1,0 +1,14 @@
+﻿@model fourHorsemen_Online_Video_Game_Database.ViewModels.ChangeUsernameViewModel
+
+<div class="container mt-4">
+    <h2>Change Username</h2>
+    <hr />
+    <form asp-action="ChangeUsername" method="post">
+        <div class="form-group">
+            <label for="NewUsername">New Username</label>
+            <input type="text" class="form-control" id="NewUsername" name="NewUsername" value="@Model.CurrentUsername" required />
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Save Changes</button>
+        <a asp-action="MyInfo" class="btn btn-secondary mt-2">Cancel</a>
+    </form>
+</div>

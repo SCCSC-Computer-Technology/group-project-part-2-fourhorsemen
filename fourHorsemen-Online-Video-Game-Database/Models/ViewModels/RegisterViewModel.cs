@@ -4,6 +4,8 @@ namespace fourHorsemen_Online_Video_Game_Database.Models.ViewModels
 {
     public class RegisterViewModel
     {
+        public string Username { get; set; }
+
         [Required]
         [EmailAddress]
         public string Email { get; set; }

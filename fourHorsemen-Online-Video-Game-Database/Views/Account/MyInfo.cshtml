@@ -1,18 +1,23 @@
 ﻿@model fourHorsemen_Online_Video_Game_Database.ViewModels.MyInfoViewModel
 
-@{
-    ViewData["Title"] = "My Profile";
-}
-
-<h2>@ViewData["Title"]</h2>
-
-<div class="card" style="width: 30rem; margin-top: 20px;">
-    <div class="card-body">
-        <h5 class="card-title">@Model.Username</h5>
-        <h6 class="card-subtitle mb-2 text-muted">@Model.Email</h6>
-        <p class="card-text">
-            <strong>Member Since:</strong> @Model.JoinDate?.ToString("MMMM dd, yyyy")
-        </p>
-        <a href="/Account/EditProfile" class="btn btn-primary">Edit Profile</a>
+<div class="container mt-4">
+    <h2>My Profile</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <p><strong>Username:</strong> @Model.Username</p>
+            <p>
+                <a asp-action="ChangeUsername" class="btn btn-link">Change Username</a>
+            </p>
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Join Date:</strong> @Model.JoinDate?.ToString("MMMM dd, yyyy")</p>
+        </div>
+        <div class="col-md-6">
+            <h4>My Games</h4>
+            <p><strong>Favorites:</strong> @Model.FavoritesCount</p>
+            <p><strong>Owned:</strong> @Model.OwnedCount</p>
+            <p><strong>Wishlist:</strong> @Model.WishlistCount</p>
+            <p><strong>Defeated:</strong> @Model.DefeatedCount</p>
+        </div>
     </div>
 </div>
