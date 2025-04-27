@@ -10,7 +10,7 @@ public class GameNewsService
         "https://www.gamespot.com/feeds/news/",
         "https://www.nintendolife.com/feeds/latest",
         "https://www.ign.com/rss",
-        "https://www.giantbomb.com/feeds/news/",
+        "https://www.purexbox.com/feeds/latest",
         "https://www.gameinformer.com/rss"
     };
 
