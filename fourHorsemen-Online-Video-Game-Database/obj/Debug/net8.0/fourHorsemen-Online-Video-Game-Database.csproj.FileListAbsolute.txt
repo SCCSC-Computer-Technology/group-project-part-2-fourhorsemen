@@ -949,7 +949,6 @@ C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-O
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.fourHorsemen-Online-Video-Game-Database.props
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.fourHorsemen-Online-Video-Game-Database.props
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\fourHors.07819C51.Up2Date
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\fourHorsemen-Online-Video-Game-Database.dll
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\refint\fourHorsemen-Online-Video-Game-Database.dll
@@ -962,3 +961,4 @@ C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-O
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\Data\GameDB_Shared_log.ldf
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\CodeHollow.FeedReader.dll
 C:\Users\dmsch\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\bin\Debug\net8.0\CodeHollow.FeedReader.dll
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

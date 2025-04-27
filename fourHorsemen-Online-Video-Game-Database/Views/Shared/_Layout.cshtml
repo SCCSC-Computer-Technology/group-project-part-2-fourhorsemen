@@ -220,11 +220,12 @@
                             }
                             else
                             {
-                                <li><a class="dropdown-item" href="/Account/MyInfo">My Info</a></li>
-                                <li><a class="dropdown-item" href="/Account/Favorites">Favorite Games</a></li>
-                                <li><a class="dropdown-item" href="/Account/OwnedGames">Owned Games</a></li>
-                                <li><a class="dropdown-item" href="/Account/WishList">Wish List</a></li>
-                                <li><a class="dropdown-item" href="/Account/DefeatedGames">Defeated Games</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="MyInfo">My Info</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Favorites">Favorite Games</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="OwnedGames">Owned Games</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="WishList">Wish List</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="DefeatedGames">Defeated Games</a></li>
+
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="/Account/Logout">Logout</a></li>
                             }                           

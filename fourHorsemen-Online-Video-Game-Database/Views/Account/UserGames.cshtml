@@ -1,9 +1,8 @@
 ﻿@model List<fourHorsemen_Online_Video_Game_Database.Models.UserGame>
 
 @{
-    ViewData["Title"] = "My Games";
+    ViewData["Title"] = $"My {ViewBag.Category} Games";
 }
-
 <h2>@ViewData["Title"]</h2>
 
 @if (!Model.Any())

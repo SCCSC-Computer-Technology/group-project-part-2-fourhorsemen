@@ -6,22 +6,24 @@ using fourHorsemen_Online_Video_Game_Database.Models.ViewModels;
 using fourHorsemen_Online_Video_Game_Database.Services;
 using fourHorsemen_Online_Video_Game_Database.Data;
 using Microsoft.EntityFrameworkCore;
+using fourHorsemen_Online_Video_Game_Database.ViewModels;
 
 namespace fourHorsemen_Online_Video_Game_Database.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<SiteUser> _signInManager;
+        private readonly UserManager<SiteUser> _userManager;
         private readonly IEmailSender _emailSender;
         private readonly GameDBContext _context;
 
-        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IEmailSender emailSender, GameDBContext context)
+        public AccountController(SignInManager<SiteUser> signInManager, UserManager<SiteUser> userManager, IEmailSender emailSender, GameDBContext context)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _emailSender = emailSender;
             _context = context;
+
         }
 
         public IActionResult Login()
@@ -73,7 +75,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
             if (ModelState.IsValid)
             {
 
-                var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+                var user = new SiteUser { UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
@@ -166,10 +168,11 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 .Include(ug => ug.Game)
                 .ToListAsync();
 
+            ViewBag.Category = "Favorites";
             return View("UserGames", favorites);
         }
 
-        public async Task<IActionResult> Owned()
+        public async Task<IActionResult> OwnedGames()
         {
             var userId = _userManager.GetUserId(User);
             var owned = await _context.UserGames
@@ -177,6 +180,7 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 .Include(ug => ug.Game)
                 .ToListAsync();
 
+            ViewBag.Category = "Owned";
             return View("UserGames", owned);
         }
 
@@ -188,10 +192,11 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 .Include(ug => ug.Game)
                 .ToListAsync();
 
+            ViewBag.Category = "Wishlist";
             return View("UserGames", wishlist);
         }
 
-        public async Task<IActionResult> Defeated()
+        public async Task<IActionResult> DefeatedGames()
         {
             var userId = _userManager.GetUserId(User);
             var defeated = await _context.UserGames
@@ -199,7 +204,26 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
                 .Include(ug => ug.Game)
                 .ToListAsync();
 
+            ViewBag.Category = "Defeated";
             return View("UserGames", defeated);
+        }
+
+        public async Task<IActionResult> MyInfo()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var viewModel = new MyInfoViewModel
+            {
+                Username = user.UserName,
+                Email = user.Email,
+                JoinDate = user.JoinDate
+            };
+
+            return View(viewModel);
         }
 
 
