@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\atari_lynx_games.csv"
     },
     {
+      "Id": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\audio\\TheFourHorsemen.mp3",
+      "PackagePath": "staticwebassets\\audio\\TheFourHorsemen.mp3"
+    },
+    {
       "Id": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

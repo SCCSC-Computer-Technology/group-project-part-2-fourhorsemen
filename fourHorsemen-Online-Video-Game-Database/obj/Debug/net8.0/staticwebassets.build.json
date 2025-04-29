@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yx4eoy8N2CjZTfH1fCuE4XtlCwWD4Ohu0+JjyJdzrrU=",
+  "Hash": "1QSe/pv7rOTauwQolOQ5z0OTAP4/T0MgQOIzimr3dLs=",
   "Source": "fourHorsemen-Online-Video-Game-Database",
   "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
   "Mode": "Default",
@@ -1422,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\atari_lynx_games.csv"
+    },
+    {
+      "Identity": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\audio\\TheFourHorsemen.mp3",
+      "SourceId": "fourHorsemen-Online-Video-Game-Database",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\",
+      "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
+      "RelativePath": "audio/TheFourHorsemen#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wql3izxf9",
+      "Integrity": "Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\TheFourHorsemen.mp3"
     },
     {
       "Identity": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\css\\site.css",
@@ -3852,6 +3873,88 @@
       ]
     },
     {
+      "Route": "audio/TheFourHorsemen.2wql3izxf9.mp3",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\audio\\TheFourHorsemen.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17296252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 May 2013 15:48:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wql3izxf9"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/TheFourHorsemen.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg="
+        }
+      ]
+    },
+    {
+      "Route": "audio/TheFourHorsemen.mp3",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\audio\\TheFourHorsemen.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17296252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 May 2013 15:48:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -4038,7 +4141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 16:46:06 GMT"
+          "Value": "Tue, 29 Apr 2025 00:42:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4083,7 +4186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 16:46:06 GMT"
+          "Value": "Tue, 29 Apr 2025 00:42:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4128,7 +4231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 16:46:06 GMT"
+          "Value": "Tue, 29 Apr 2025 00:42:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4165,7 +4268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 16:46:06 GMT"
+          "Value": "Tue, 29 Apr 2025 00:42:53 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -3,6 +3,7 @@ wwwroot\atari_5200_games.csv
 wwwroot\atari_7800_games.csv
 wwwroot\atari_jaguar_games.csv
 wwwroot\atari_lynx_games.csv
+wwwroot\audio\TheFourHorsemen.mp3
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Images\default-avatar.jpg

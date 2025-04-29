@@ -12,9 +12,9 @@
         public int NumberOfPlayers { get; set; }
         public long Sales { get; set; }
 
-        public string Description { get; set; }
-        public string Platform { get; set; }
-        public string CoverImageUrl { get; set; }
+        //public string Description { get; set; }
+        //public string Platform { get; set; }
+        //public string CoverImageUrl { get; set; }
     }
 
 }

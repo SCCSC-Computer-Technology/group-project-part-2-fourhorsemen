@@ -3,24 +3,26 @@
 @{
     ViewData["Title"] = $"My {ViewBag.Category} Games";
 }
-<h2>@ViewData["Title"]</h2>
+<div style="text-align: center;">
+    <h2 style="margin-bottom: 30px;">@ViewData["Title"]</h2>
 
-@if (!Model.Any())
-{
-    <p>You haven't added any games in this category yet.</p>
-}
-else
-{
-    <div class="user-games-list">
-        @foreach (var item in Model)
-        {
-            <div class="game-box">
-                <h3>@item.Game.Title</h3>
-                <p><strong>Developer:</strong> @item.Game.Developer</p>
-                <p><strong>System:</strong> @item.Game.System</p>
-                <p><strong>Release Date:</strong> @item.Game.ReleaseDate.ToShortDateString()</p>
-                <p><strong>Category:</strong> @item.Category</p>
-            </div>
-        }
-    </div>
-}
+    @if (!Model.Any())
+    {
+        <p>You haven't added any games in this category yet.</p>
+    }
+    else
+    {
+        <div class="user-games-list" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            @foreach (var item in Model)
+            {
+                <div class="game-box" style="border: 1px solid #ccc; padding: 15px; width: 250px; background-color: #f9f9f9; border-radius: 8px;">
+                    <h3>@item.Game.Title</h3>
+                    <p><strong>Developer:</strong> @item.Game.Developer</p>
+                    <p><strong>System:</strong> @item.Game.System</p>
+                    <p><strong>Release Date:</strong> @item.Game.ReleaseDate.ToShortDateString()</p>
+                    <p><strong>Category:</strong> @item.Category</p>
+                </div>
+            }
+        </div>
+    }
+</div>

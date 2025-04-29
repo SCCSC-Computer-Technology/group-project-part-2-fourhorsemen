@@ -60,6 +60,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ki8u8uwdy8"},{"Name":"integrity","Value":"sha256-nAbPDzMrM55lKAM\u002Bdv/J6BrohKWpvr\u002BjavQlfl1XlzE="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/atari_lynx_games.csv"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1085"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022nAbPDzMrM55lKAM\u002Bdv/J6BrohKWpvr\u002BjavQlfl1XlzE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/audio/TheFourHorsemen.2wql3izxf9.mp3">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\audio\TheFourHorsemen.mp3'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2wql3izxf9"},{"Name":"integrity","Value":"sha256-Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/audio/TheFourHorsemen.mp3"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17296252"},{"Name":"Content-Type","Value":"audio/mpeg"},{"Name":"ETag","Value":"\u0022Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 May 2013 15:48:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/audio/TheFourHorsemen.mp3">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\audio\TheFourHorsemen.mp3'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"17296252"},{"Name":"Content-Type","Value":"audio/mpeg"},{"Name":"ETag","Value":"\u0022Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 05 May 2013 15:48:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -88,13 +100,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fourHorsemen-Online-Video-Game-Database.ausw8r4wnv.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ausw8r4wnv"},{"Name":"integrity","Value":"sha256-Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/fourHorsemen-Online-Video-Game-Database.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 16:46:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 00:42:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/fourHorsemen-Online-Video-Game-Database.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fourHorsemen-Online-Video-Game-Database.ausw8r4wnv.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 16:46:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1157"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Au6KgWTiHdYFE0i3sLle6\u002BEwcmVWebr7EafLbQey4W0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 00:42:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/Images/default-avatar.c2y2a1irbg.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\default-avatar.jpg'))</AssetFile>

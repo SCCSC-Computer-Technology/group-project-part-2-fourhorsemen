@@ -2797,6 +2797,88 @@
       ]
     },
     {
+      "Route": "audio/TheFourHorsemen.2wql3izxf9.mp3",
+      "AssetFile": "audio/TheFourHorsemen.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17296252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 May 2013 15:48:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wql3izxf9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg="
+        },
+        {
+          "Name": "label",
+          "Value": "audio/TheFourHorsemen.mp3"
+        }
+      ]
+    },
+    {
+      "Route": "audio/TheFourHorsemen.mp3",
+      "AssetFile": "audio/TheFourHorsemen.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17296252"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 May 2013 15:48:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yla0mXv3pZhPOJzd9BsRjsGaV52XUuMb7erfiLOQvNg="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
@@ -2987,7 +3069,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 16:46:06 GMT"
+          "Value": "Tue, 29 Apr 2025 00:42:53 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3032,7 +3114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 16:46:06 GMT"
+          "Value": "Tue, 29 Apr 2025 00:42:53 GMT"
         }
       ],
       "EndpointProperties": [
