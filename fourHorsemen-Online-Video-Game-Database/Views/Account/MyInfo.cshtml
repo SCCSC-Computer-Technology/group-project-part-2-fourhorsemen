@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-6">
 
-            <img src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/images/default-avatar.png" : Model.AvatarUrl)" alt="Avatar" class="img-thumbnail" style="width: 150px; height: 150px;" />
+            <img src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/Images/default-avatar.jpg" : Model.AvatarUrl)" alt="Avatar" class="img-thumbnail" style="width: 150px; height: 150px;" />
 
             <form asp-action="UploadAvatar" asp-controller="Account" enctype="multipart/form-data" method="post" id="avatarForm">
                 <input type="file" name="avatarFile" id="avatarFileInput" style="display: none;" onchange="document.getElementById('avatarForm').submit();" />
