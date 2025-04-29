@@ -6,6 +6,7 @@ wwwroot\atari_lynx_games.csv
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Images\default-avatar.jpg
+wwwroot\Images\fourhorsemen.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -96,4 +97,5 @@ wwwroot\sony_ps4_games.csv
 wwwroot\sony_ps5_games.csv
 wwwroot\sony_psp_games.csv
 wwwroot\sony_vita_games.csv
+wwwroot\uploads\avatars\2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png
 wwwroot\uploads\avatars\492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png

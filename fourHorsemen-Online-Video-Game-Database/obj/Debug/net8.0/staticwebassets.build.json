@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d89Jog/Uy5wrFA+9ZwtGLsaE9lBCOb8Jl4RUoDayGPg=",
+  "Hash": "yx4eoy8N2CjZTfH1fCuE4XtlCwWD4Ohu0+JjyJdzrrU=",
   "Source": "fourHorsemen-Online-Video-Game-Database",
   "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
   "Mode": "Default",
@@ -1485,6 +1485,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\default-avatar.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\Images\\fourhorsemen.jpg",
+      "SourceId": "fourHorsemen-Online-Video-Game-Database",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\",
+      "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
+      "RelativePath": "Images/fourhorsemen#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lnam0iaa0r",
+      "Integrity": "j3ivoHJ2o6nhleVzA26IMi6kOaEMgka9nK0nsjB1TZA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\fourhorsemen.jpg"
     },
     {
       "Identity": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\js\\site.js",
@@ -3377,6 +3398,27 @@
       "OriginalItemSpec": "wwwroot\\sony_vita_games.csv"
     },
     {
+      "Identity": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\uploads\\avatars\\2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png",
+      "SourceId": "fourHorsemen-Online-Video-Game-Database",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\",
+      "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
+      "RelativePath": "uploads/avatars/2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oz870th0pg",
+      "Integrity": "RM2yWOEtAXFqjY75ZyEHI++SrLxcxW71fG8b6g/4CA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png"
+    },
+    {
       "Identity": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\uploads\\avatars\\492f8126-6eea-4174-8998-c74c2cb462ed_unnamed.png",
       "SourceId": "fourHorsemen-Online-Video-Game-Database",
       "SourceType": "Discovered",
@@ -3586,7 +3628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
+          "Value": "Tue, 29 Apr 2025 00:03:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3631,7 +3673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
+          "Value": "Tue, 29 Apr 2025 00:03:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6436,6 +6478,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-DBn4vYuhuE21T7i02FnrpNFQyJzLptaHj07dO8I0568="
+        }
+      ]
+    },
+    {
+      "Route": "Images/fourhorsemen.jpg",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\Images\\fourhorsemen.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j3ivoHJ2o6nhleVzA26IMi6kOaEMgka9nK0nsjB1TZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 22:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j3ivoHJ2o6nhleVzA26IMi6kOaEMgka9nK0nsjB1TZA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/fourhorsemen.lnam0iaa0r.jpg",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\Images\\fourhorsemen.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j3ivoHJ2o6nhleVzA26IMi6kOaEMgka9nK0nsjB1TZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 22:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lnam0iaa0r"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/fourhorsemen.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j3ivoHJ2o6nhleVzA26IMi6kOaEMgka9nK0nsjB1TZA="
         }
       ]
     },
@@ -13816,6 +13940,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-DEmFhIQaMFbRA6XH5kPQxK27Vv1RsuoavHHDdp6Q718="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.oz870th0pg.png",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\uploads\\avatars\\2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RM2yWOEtAXFqjY75ZyEHI++SrLxcxW71fG8b6g/4CA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 00:05:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oz870th0pg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RM2yWOEtAXFqjY75ZyEHI++SrLxcxW71fG8b6g/4CA0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\uploads\\avatars\\2b5cd232-fd03-4642-9012-0bfc55e5e9b9_codemonkey blue2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RM2yWOEtAXFqjY75ZyEHI++SrLxcxW71fG8b6g/4CA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 00:05:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RM2yWOEtAXFqjY75ZyEHI++SrLxcxW71fG8b6g/4CA0="
         }
       ]
     },
