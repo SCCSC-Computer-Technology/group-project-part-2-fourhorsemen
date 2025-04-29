@@ -4,7 +4,7 @@
         background-color: #f4f4f4;
         color: #333;
         margin: 0;
-        padding: 0;
+        padding: 70px 0 0 0;
     }
 
     .details-container {
@@ -16,33 +16,26 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-        .details-container h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #dc3545;
-            text-align: center;
-        }
-
-        .details-container p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-    .back-button {
-        display: inline-block;
-        margin-top: 25px;
-        padding: 10px 20px;
-        background-color: #6c757d;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
+    .details-container h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #dc3545;
+        text-align: center;
     }
 
-        .back-button:hover {
-            background-color: #5a6268;
-        }
+    .details-container p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .back-button-container {
+        text-align: center;
+        margin: 20px 0 80px 0;
+    }
+
+    .back-button:hover {
+        background-color: #5a6268;
+    }
 </style>
 
 <div class="details-container">
@@ -60,7 +53,7 @@
             <li><strong>Sales:</strong> @Model.Sales</li>
         </ul>
 
-    <div class="category-buttons" style="margin-top: 20px; text-align: center;">
+    <div class="category-buttons" style="margin-top: 50px; text-align: center;">
 
         <!-- Add to Favorites Form -->
         <form asp-action="AddToFavorites" asp-route-title="@Model.Title" method="post" id="favoritesForm_@Model.Title" style="display:inline;">
@@ -84,7 +77,7 @@
 
     </div>
 </div>
-<div class="mb-3">
+<div class="back-button-container">
     <a href="javascript:history.back()" class="btn btn-secondary">
         ← Back to Game List
     </a>

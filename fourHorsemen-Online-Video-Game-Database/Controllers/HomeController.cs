@@ -81,68 +81,10 @@ namespace fourHorsemen_Online_Video_Game_Database.Controllers
         }
 
 
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [HttpPost]
-        [Authorize(Roles = "Administrators")]
-        public async Task<IActionResult> ImportGames()
-        {
-            // Define a list of platforms and their corresponding CSV file paths
-            var platforms = new Dictionary<string, string>
-        {
-            { "sony_ps1", "sony_ps1_games.csv" },
-            { "sony_ps2", "sony_ps2_games.csv" },
-            { "sony_ps3", "sony_ps3_games.csv" },
-            { "sony_ps4", "sony_ps4_games.csv" },
-            { "sony_ps5", "sony_ps5_games.csv" },
-            { "sony_vita", "sony_vita_games.csv" },
-            { "sony_psp", "sony_psp_games.csv" },
-            { "microsoft_xbox", "microsoft_xbox_games.csv" },
-            { "microsoft_xbox_360", "microsoft_xbox_360_games.csv" },
-            { "microsoft_xbox_one", "microsoft_xbox_one_games.csv" },
-            { "microsoft_xbox_series_sx", "microsoft_xbox_series_sx_games.csv" },
-            { "nintendo_switch", "nintendo_switch_games.csv" },
-            { "nintendo_wii_u", "nintendo_wii_u_games.csv" },
-            { "nintendo_wii", "nintendo_wii_games.csv" },
-            { "nintendo_gamecube", "nintendo_gamecube_games.csv" },
-            { "nintendo_64", "nintendo_64_games.csv" },
-            { "nintendo_3ds", "nintendo_3ds_games.csv" },
-            { "nintendo_ds", "nintendo_ds_games.csv" },
-            { "nintendo_gameboy", "nintendo_gameboy_games.csv" },
-            { "nintendo_gameboy_color", "nintendo_gameboy_color_games.csv" },
-            { "nintendo_gameboy_advance", "nintendo_gameboy_advance_games.csv" },
-            { "sega_master_system", "sega_master_system_games.csv" },
-            { "sega_genesis", "sega_genesis_games.csv" },
-            { "sega_32x", "sega_32x_games.csv" },
-            { "sega_cd", "sega_cd_games.csv" },
-            { "sega_saturn", "sega_saturn_games.csv" },
-            { "sega_dreamcast", "sega_dreamcast_games.csv" },
-            { "sega_gamegear", "sega_gamegear_games.csv" },
-            { "atari_2600", "atari_2600_games.csv" },
-            { "atari_5200", "atari_5200_games.csv" },
-            { "atari_7800", "atari_7800_games.csv" },
-            { "atari_jaguar", "atari_jaguar_games.csv" },
-            { "atari_lynx", "atari_lynx_games.csv" },
-            { "snk_neogeo", "snk_neogeo_games.csv" },
-            { "panasonic_3do", "panasonic_3do_games.csv" }
-        };
-
-            // Loop through each platform and call the import method
-            foreach (var platform in platforms)
-            {
-                string systemName = platform.Key;
-                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", platform.Value);
-
-                await _gameImportService.ImportGamesFromCsvToDatabase(systemName, filePath);
-            }
-
-
-            return RedirectToAction("Admin"); // Redirect to Admin page after the import
         }
     }
 }
