@@ -57,6 +57,14 @@ builder.Services.AddDbContext<GameDBContext>(options =>
 
 var app = builder.Build();
 
+//login redirect for clicking admin when not logged in
+app.MapGet("/Identity/Account/Login", context =>
+{
+    context.Response.Redirect("/Account/Login");
+    return Task.CompletedTask;
+});
+
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
