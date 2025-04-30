@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fourHorsemen-Online-Video-Game-Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d5e5405e509afc5af1d7d8e0b529f8b566dc198")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45d09451862b4b2eb9aa92bc9677c9fc56dbd8e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("fourHorsemen-Online-Video-Game-Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fourHorsemen-Online-Video-Game-Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
