@@ -1308,8 +1308,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fj33nh5vy5</Fingerprint>
-      <Integrity>q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg=</Integrity>
+      <Fingerprint>nib3knibo5</Fingerprint>
+      <Integrity>D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d+To=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\microsoft_xbox_series_sx_games.csv'))</OriginalItemSpec>

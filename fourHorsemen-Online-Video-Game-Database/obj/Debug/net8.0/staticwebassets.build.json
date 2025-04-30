@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S7+KXoXKg8VJq61YrE0Ia9HgPHFD+po/Up5d7wrCZR4=",
+  "Hash": "KMmXZYz1h+9iYQjRxEm5XRN9AKq9n1cHbT/LXNqj2XI=",
   "Source": "fourHorsemen-Online-Video-Game-Database",
   "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
   "Mode": "Default",
@@ -2824,8 +2824,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fj33nh5vy5",
-      "Integrity": "q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg=",
+      "Fingerprint": "nib3knibo5",
+      "Integrity": "D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d+To=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\microsoft_xbox_series_sx_games.csv"
@@ -11679,7 +11679,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17723"
+          "Value": "24594"
         },
         {
           "Name": "Content-Type",
@@ -11687,11 +11687,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg=\""
+          "Value": "\"D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d+To=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
+          "Value": "Tue, 29 Apr 2025 23:59:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11701,12 +11701,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg="
+          "Value": "sha256-D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d+To="
         }
       ]
     },
     {
-      "Route": "microsoft_xbox_series_sx_games.fj33nh5vy5.csv",
+      "Route": "microsoft_xbox_series_sx_games.nib3knibo5.csv",
       "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\microsoft_xbox_series_sx_games.csv",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11716,7 +11716,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17723"
+          "Value": "24594"
         },
         {
           "Name": "Content-Type",
@@ -11724,11 +11724,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg=\""
+          "Value": "\"D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d+To=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
+          "Value": "Tue, 29 Apr 2025 23:59:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11738,7 +11738,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fj33nh5vy5"
+          "Value": "nib3knibo5"
         },
         {
           "Name": "label",
@@ -11746,7 +11746,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg="
+          "Value": "sha256-D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d+To="
         }
       ]
     },

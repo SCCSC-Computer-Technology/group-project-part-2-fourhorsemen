@@ -867,14 +867,14 @@
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/microsoft_xbox_series_sx_games.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\microsoft_xbox_series_sx_games.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"17723"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d\u002BTo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"24594"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d\u002BTo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 23:59:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/microsoft_xbox_series_sx_games.fj33nh5vy5.csv">
+    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/microsoft_xbox_series_sx_games.nib3knibo5.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\microsoft_xbox_series_sx_games.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fj33nh5vy5"},{"Name":"integrity","Value":"sha256-q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/microsoft_xbox_series_sx_games.csv"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17723"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022q5//bybWJvBVJ7Nhz8597BbTD7i3CoQ7k8fnzOpYRbg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nib3knibo5"},{"Name":"integrity","Value":"sha256-D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d\u002BTo="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/microsoft_xbox_series_sx_games.csv"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24594"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022D41vLjheSmlxdPqeLcisJhi7adzg68PmuUG6q22d\u002BTo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 23:59:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/nes_games.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\nes_games.csv'))</AssetFile>
