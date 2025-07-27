@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\fourHorsemen-Online-Video-Game-Database.props" />
-</Project>

@@ -945,12 +945,6 @@ C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-O
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.fourHorsemen-Online-Video-Game-Database.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.fourHorsemen-Online-Video-Game-Database.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.build.fourHorsemen-Online-Video-Game-Database.props
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.fourHorsemen-Online-Video-Game-Database.props
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.fourHorsemen-Online-Video-Game-Database.props
-C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\fourHors.07819C51.Up2Date
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\fourHorsemen-Online-Video-Game-Database.dll
@@ -958,3 +952,8 @@ C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-O
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\fourHorsemen-Online-Video-Game-Database.pdb
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\fourHorsemen-Online-Video-Game-Database.genruntimeconfig.cache
 C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\ref\fourHorsemen-Online-Video-Game-Database.dll
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\joshp\Documents\GitHub\group-project-part-2-fourhorsemen\fourHorsemen-Online-Video-Game-Database\obj\Debug\net8.0\staticwebassets.build.json.cache
