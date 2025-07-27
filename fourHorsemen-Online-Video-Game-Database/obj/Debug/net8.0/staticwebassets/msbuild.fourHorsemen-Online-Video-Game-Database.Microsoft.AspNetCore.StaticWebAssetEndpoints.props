@@ -972,17 +972,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3ue2T5diGKTkU/0QCgoECQYyxfBEa\u002BXybgVtMzWL/KI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15637"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u00223ue2T5diGKTkU/0QCgoECQYyxfBEa\u002BXybgVtMzWL/KI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/nintendo_switch_games.5o3u2t86iu.csv">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\nintendo_switch_games.csv'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5o3u2t86iu"},{"Name":"integrity","Value":"sha256-FUTVGSol1s8epDeSlmFhm2i\u002BM/D5M1y\u002BydB7XQ3Fzxc="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/nintendo_switch_games.csv"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"123075"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022FUTVGSol1s8epDeSlmFhm2i\u002BM/D5M1y\u002BydB7XQ3Fzxc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:48:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/nintendo_switch_games.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\nintendo_switch_games.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"122976"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u00224Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/nintendo_switch_games.k7954ywwb4.csv">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\nintendo_switch_games.csv'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k7954ywwb4"},{"Name":"integrity","Value":"sha256-4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/nintendo_switch_games.csv"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"122976"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u00224Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FUTVGSol1s8epDeSlmFhm2i\u002BM/D5M1y\u002BydB7XQ3Fzxc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"123075"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022FUTVGSol1s8epDeSlmFhm2i\u002BM/D5M1y\u002BydB7XQ3Fzxc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:48:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/nintendo_wii_games.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\nintendo_wii_games.csv'))</AssetFile>
@@ -1176,17 +1176,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jy94are71f"},{"Name":"integrity","Value":"sha256-lb4Jqbg9zeqh4zJ0SLc5Ikf/endq\u002BBQcYPwDDz2Fp/E="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/sony_ps4_games.csv"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"158756"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022lb4Jqbg9zeqh4zJ0SLc5Ikf/endq\u002BBQcYPwDDz2Fp/E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/sony_ps5_games.6d6dej26wk.csv">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sony_ps5_games.csv'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6d6dej26wk"},{"Name":"integrity","Value":"sha256-hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/sony_ps5_games.csv"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28319"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/sony_ps5_games.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sony_ps5_games.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28319"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 22:17:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kyn4D3nfJ3tD\u002BDh70db0dwnHwXzuPME08XjXtVJqo8s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"28433"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022kyn4D3nfJ3tD\u002BDh70db0dwnHwXzuPME08XjXtVJqo8s=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:46:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/sony_ps5_games.v1xdlz6dwb.csv">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sony_ps5_games.csv'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v1xdlz6dwb"},{"Name":"integrity","Value":"sha256-kyn4D3nfJ3tD\u002BDh70db0dwnHwXzuPME08XjXtVJqo8s="},{"Name":"label","Value":"_content/fourHorsemen-Online-Video-Game-Database/sony_ps5_games.csv"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28433"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022kyn4D3nfJ3tD\u002BDh70db0dwnHwXzuPME08XjXtVJqo8s=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:46:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/fourHorsemen-Online-Video-Game-Database/sony_psp_games.1sjoy48ocs.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sony_psp_games.csv'))</AssetFile>

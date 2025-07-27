@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D252E74-2A2B-47AD-95F2-AEF2AC8CCC8A}|fourHorsemen-Online-Video-Game-Database.csproj|c:\\users\\dmsch\\documents\\github\\group-project-part-2-fourhorsemen\\fourhorsemen-online-video-game-database\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,19 +178,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T15:21:09.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T15:21:07.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-21T22:58:26.795Z"
+              "WhenOpened": "2025-04-21T22:58:26.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -194,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -206,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -218,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\Game.cs",
               "RelativeDocumentMoniker": "Models\\Game.cs",
@@ -230,20 +265,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Admin.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Admin.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Admin.cshtml",
               "ToolTip": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Admin.cshtml",
               "RelativeToolTip": "Views\\Home\\Admin.cshtml",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAABoAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABoAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-29T02:07:13.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
@@ -255,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "RawgApiService.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\RawgApiService.cs",
               "RelativeDocumentMoniker": "Services\\RawgApiService.cs",
@@ -267,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -279,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UserGame.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\UserGame.cs",
               "RelativeDocumentMoniker": "Models\\UserGame.cs",
@@ -291,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UserGames.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\UserGames.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\UserGames.cshtml",
@@ -303,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "GameImportService.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\GameImportService.cs",
               "RelativeDocumentMoniker": "Services\\GameImportService.cs",
@@ -315,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "MyInfo.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\MyInfo.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\MyInfo.cshtml",
@@ -327,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
@@ -339,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -351,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "SiteUser.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\ViewModels\\SiteUser.cs",
               "RelativeDocumentMoniker": "Models\\ViewModels\\SiteUser.cs",
@@ -363,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -375,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MyInfoModelView.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\ViewModels\\MyInfoModelView.cs",
               "RelativeDocumentMoniker": "Models\\ViewModels\\MyInfoModelView.cs",
@@ -387,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ChangeUsername.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\ViewModels\\ChangeUsername.cs",
               "RelativeDocumentMoniker": "Models\\ViewModels\\ChangeUsername.cs",
@@ -399,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ChangeUsername.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\ChangeUsername.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ChangeUsername.cshtml",
@@ -411,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModels\\RegisterViewModel.cs",
@@ -423,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
@@ -435,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Facts.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Facts.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Facts.cshtml",
@@ -447,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "GameNewsFeed.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\GameNewsFeed.cs",
               "RelativeDocumentMoniker": "Services\\GameNewsFeed.cs",
@@ -459,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -471,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "History.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\History.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\History.cshtml",
@@ -483,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
@@ -495,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "bootstrap.css.map",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
               "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
@@ -507,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "bootstrap.rtl.css.map",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
               "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
@@ -519,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -531,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -543,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -555,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Favorites.cshtml",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Views\\Account\\Favorites.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Favorites.cshtml",
@@ -567,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "FunFacts.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Models\\FunFacts.cs",
               "RelativeDocumentMoniker": "Models\\FunFacts.cs",
@@ -579,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "FunFactsService.cs",
               "DocumentMoniker": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\Services\\FunFactsService.cs",
               "RelativeDocumentMoniker": "Services\\FunFactsService.cs",

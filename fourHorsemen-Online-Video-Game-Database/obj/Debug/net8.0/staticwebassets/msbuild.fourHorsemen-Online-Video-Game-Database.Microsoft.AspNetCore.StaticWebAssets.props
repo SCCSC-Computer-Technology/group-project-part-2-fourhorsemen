@@ -1470,8 +1470,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k7954ywwb4</Fingerprint>
-      <Integrity>4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk=</Integrity>
+      <Fingerprint>5o3u2t86iu</Fingerprint>
+      <Integrity>FUTVGSol1s8epDeSlmFhm2i+M/D5M1y+ydB7XQ3Fzxc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\nintendo_switch_games.csv'))</OriginalItemSpec>
@@ -1776,8 +1776,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6d6dej26wk</Fingerprint>
-      <Integrity>hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8=</Integrity>
+      <Fingerprint>v1xdlz6dwb</Fingerprint>
+      <Integrity>kyn4D3nfJ3tD+Dh70db0dwnHwXzuPME08XjXtVJqo8s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sony_ps5_games.csv'))</OriginalItemSpec>

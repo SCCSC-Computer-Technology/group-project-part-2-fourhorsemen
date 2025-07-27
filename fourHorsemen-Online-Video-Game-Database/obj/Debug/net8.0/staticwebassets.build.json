@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KMmXZYz1h+9iYQjRxEm5XRN9AKq9n1cHbT/LXNqj2XI=",
+  "Hash": "z2mhmOUkgI9h+nY1UDM0P7tMPQGeiC/jKSJN8NBZlqM=",
   "Source": "fourHorsemen-Online-Video-Game-Database",
   "BasePath": "_content/fourHorsemen-Online-Video-Game-Database",
   "Mode": "Default",
@@ -3013,8 +3013,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "k7954ywwb4",
-      "Integrity": "4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk=",
+      "Fingerprint": "5o3u2t86iu",
+      "Integrity": "FUTVGSol1s8epDeSlmFhm2i+M/D5M1y+ydB7XQ3Fzxc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\nintendo_switch_games.csv"
@@ -3370,8 +3370,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6d6dej26wk",
-      "Integrity": "hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8=",
+      "Fingerprint": "v1xdlz6dwb",
+      "Integrity": "kyn4D3nfJ3tD+Dh70db0dwnHwXzuPME08XjXtVJqo8s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sony_ps5_games.csv"
@@ -12407,6 +12407,51 @@
       ]
     },
     {
+      "Route": "nintendo_switch_games.5o3u2t86iu.csv",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\nintendo_switch_games.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUTVGSol1s8epDeSlmFhm2i+M/D5M1y+ydB7XQ3Fzxc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:48:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5o3u2t86iu"
+        },
+        {
+          "Name": "label",
+          "Value": "nintendo_switch_games.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUTVGSol1s8epDeSlmFhm2i+M/D5M1y+ydB7XQ3Fzxc="
+        }
+      ]
+    },
+    {
       "Route": "nintendo_switch_games.csv",
       "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\nintendo_switch_games.csv",
       "Selectors": [],
@@ -12417,7 +12462,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "122976"
+          "Value": "123075"
         },
         {
           "Name": "Content-Type",
@@ -12425,11 +12470,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk=\""
+          "Value": "\"FUTVGSol1s8epDeSlmFhm2i+M/D5M1y+ydB7XQ3Fzxc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
+          "Value": "Wed, 30 Apr 2025 22:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12439,52 +12484,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk="
-        }
-      ]
-    },
-    {
-      "Route": "nintendo_switch_games.k7954ywwb4.csv",
-      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\nintendo_switch_games.csv",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "122976"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/csv"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "k7954ywwb4"
-        },
-        {
-          "Name": "label",
-          "Value": "nintendo_switch_games.csv"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4Al5J74OojRhRZnjlA1b1f8g5H3b5xQDKtLnDsMESGk="
+          "Value": "sha256-FUTVGSol1s8epDeSlmFhm2i+M/D5M1y+ydB7XQ3Fzxc="
         }
       ]
     },
@@ -13801,51 +13801,6 @@
       ]
     },
     {
-      "Route": "sony_ps5_games.6d6dej26wk.csv",
-      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\sony_ps5_games.csv",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "28319"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/csv"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6d6dej26wk"
-        },
-        {
-          "Name": "label",
-          "Value": "sony_ps5_games.csv"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8="
-        }
-      ]
-    },
-    {
       "Route": "sony_ps5_games.csv",
       "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\sony_ps5_games.csv",
       "Selectors": [],
@@ -13856,7 +13811,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28319"
+          "Value": "28433"
         },
         {
           "Name": "Content-Type",
@@ -13864,11 +13819,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8=\""
+          "Value": "\"kyn4D3nfJ3tD+Dh70db0dwnHwXzuPME08XjXtVJqo8s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:17:36 GMT"
+          "Value": "Wed, 30 Apr 2025 22:46:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13878,7 +13833,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hgTi3q7S2yeZy9ZZlecvxTkvUl7ZWtSMcHQm21uW4X8="
+          "Value": "sha256-kyn4D3nfJ3tD+Dh70db0dwnHwXzuPME08XjXtVJqo8s="
+        }
+      ]
+    },
+    {
+      "Route": "sony_ps5_games.v1xdlz6dwb.csv",
+      "AssetFile": "C:\\Users\\dmsch\\Documents\\GitHub\\group-project-part-2-fourhorsemen\\fourHorsemen-Online-Video-Game-Database\\wwwroot\\sony_ps5_games.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kyn4D3nfJ3tD+Dh70db0dwnHwXzuPME08XjXtVJqo8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 22:46:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v1xdlz6dwb"
+        },
+        {
+          "Name": "label",
+          "Value": "sony_ps5_games.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kyn4D3nfJ3tD+Dh70db0dwnHwXzuPME08XjXtVJqo8s="
         }
       ]
     },
